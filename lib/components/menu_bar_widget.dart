@@ -3,17 +3,14 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'menu_bar_model.dart';
 export 'menu_bar_model.dart';
 
 class MenuBarWidget extends StatefulWidget {
-  const MenuBarWidget({Key? key}) : super(key: key);
+  const MenuBarWidget({super.key});
 
   @override
   _MenuBarWidgetState createState() => _MenuBarWidgetState();
@@ -32,8 +29,8 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 200.ms,
-          begin: Offset(0.0, 0.0),
-          end: Offset(0.0, -130.0),
+          begin: const Offset(0.0, 0.0),
+          end: const Offset(0.0, -130.0),
         ),
       ],
     ),
@@ -46,7 +43,7 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
           delay: 0.ms,
           duration: 300.ms,
           hz: 2,
-          offset: Offset(0.0, 0.0),
+          offset: const Offset(0.0, 0.0),
           rotation: -1.571,
         ),
       ],
@@ -59,8 +56,8 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 200.ms,
-          begin: Offset(0.0, 0.0),
-          end: Offset(0.0, -130.0),
+          begin: const Offset(0.0, 0.0),
+          end: const Offset(0.0, -130.0),
         ),
       ],
     ),
@@ -73,7 +70,7 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
           delay: 0.ms,
           duration: 300.ms,
           hz: 2,
-          offset: Offset(0.0, 0.0),
+          offset: const Offset(0.0, 0.0),
           rotation: -1.571,
         ),
       ],
@@ -124,7 +121,7 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
           Container(
             width: double.infinity,
             decoration: BoxDecoration(
-              color: Color(0x00FFFFFF),
+              color: const Color(0x00FFFFFF),
               image: DecorationImage(
                 fit: BoxFit.fill,
                 image: Image.asset(
@@ -141,19 +138,19 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 20.0, 20.0, 20.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(-1.00, 0.00),
+                              alignment: const AlignmentDirectional(-1.00, 0.00),
                               child: FFButtonWidget(
                                 onPressed: () async {
                                   context.pushNamed(
                                     'HomePage',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType: PageTransitionType.fade,
                                         duration: Duration(milliseconds: 0),
@@ -168,11 +165,11 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                                 text: 'Home',
                                 options: FFButtonOptions(
                                   width: 46.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: Color(0x00FFFFFF),
+                                  color: const Color(0x00FFFFFF),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -187,29 +184,29 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                                         fontWeight: FontWeight.w600,
                                       ),
                                   elevation: 0.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00FFFFFF),
                                     width: 0.0,
                                   ),
                                   borderRadius: BorderRadius.circular(8.0),
-                                  hoverColor: Color(0x00FFFFFF),
-                                  hoverBorderSide: BorderSide(
+                                  hoverColor: const Color(0x00FFFFFF),
+                                  hoverBorderSide: const BorderSide(
                                     color: Color(0x00FFFFFF),
                                     width: 0.0,
                                   ),
-                                  hoverTextColor: Color(0xFFDD5E5F),
+                                  hoverTextColor: const Color(0xFFDD5E5F),
                                 ),
                                 showLoadingIndicator: false,
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(-1.00, 0.00),
+                              alignment: const AlignmentDirectional(-1.00, 0.00),
                               child: FFButtonWidget(
                                 onPressed: () async {
                                   context.pushNamed(
                                     'AboutPage',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType: PageTransitionType.fade,
                                         duration: Duration(milliseconds: 0),
@@ -224,11 +221,11 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                                 text: 'About',
                                 options: FFButtonOptions(
                                   width: 48.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: Color(0x00FFFFFF),
+                                  color: const Color(0x00FFFFFF),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -243,34 +240,34 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                                         fontWeight: FontWeight.w600,
                                       ),
                                   elevation: 0.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00FFFFFF),
                                     width: 0.0,
                                   ),
                                   borderRadius: BorderRadius.circular(8.0),
-                                  hoverColor: Color(0x00FFFFFF),
-                                  hoverBorderSide: BorderSide(
+                                  hoverColor: const Color(0x00FFFFFF),
+                                  hoverBorderSide: const BorderSide(
                                     color: Color(0x00FFFFFF),
                                     width: 0.0,
                                   ),
-                                  hoverTextColor: Color(0xFFDD5E5F),
+                                  hoverTextColor: const Color(0xFFDD5E5F),
                                 ),
                                 showLoadingIndicator: false,
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(-1.00, 0.00),
+                              alignment: const AlignmentDirectional(-1.00, 0.00),
                               child: FFButtonWidget(
                                 onPressed: () {
                                   print('Button pressed ...');
                                 },
                                 text: 'Download',
                                 options: FFButtonOptions(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: Color(0x00FFFFFF),
+                                  color: const Color(0x00FFFFFF),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -281,17 +278,17 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                                         fontWeight: FontWeight.w600,
                                       ),
                                   elevation: 0.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00FFFFFF),
                                     width: 0.0,
                                   ),
                                   borderRadius: BorderRadius.circular(8.0),
-                                  hoverColor: Color(0x00FFFFFF),
-                                  hoverBorderSide: BorderSide(
+                                  hoverColor: const Color(0x00FFFFFF),
+                                  hoverBorderSide: const BorderSide(
                                     color: Color(0x00FFFFFF),
                                     width: 0.0,
                                   ),
-                                  hoverTextColor: Color(0xFFDD5E5F),
+                                  hoverTextColor: const Color(0xFFDD5E5F),
                                 ),
                                 showLoadingIndicator: false,
                               ),
@@ -307,9 +304,9 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(1.00, -1.00),
+                        alignment: const AlignmentDirectional(1.00, -1.00),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               20.0, 20.0, 20.0, 20.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
@@ -343,7 +340,7 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.00, 0.00),
+                                alignment: const AlignmentDirectional(0.00, 0.00),
                                 child: FaIcon(
                                   FontAwesomeIcons.bars,
                                   color: FlutterFlowTheme.of(context)
@@ -374,7 +371,7 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
           Container(
             width: double.infinity,
             decoration: BoxDecoration(
-              color: Color(0x00FFFFFF),
+              color: const Color(0x00FFFFFF),
               image: DecorationImage(
                 fit: BoxFit.fill,
                 image: Image.asset(
@@ -391,19 +388,19 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 20.0, 20.0, 20.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(-1.00, 0.00),
+                              alignment: const AlignmentDirectional(-1.00, 0.00),
                               child: FFButtonWidget(
                                 onPressed: () async {
                                   context.pushNamed(
                                     'HomePage',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType: PageTransitionType.fade,
                                         duration: Duration(milliseconds: 0),
@@ -418,11 +415,11 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                                 text: 'Home',
                                 options: FFButtonOptions(
                                   width: 46.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: Color(0x00FFFFFF),
+                                  color: const Color(0x00FFFFFF),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -437,29 +434,29 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                                         fontWeight: FontWeight.w600,
                                       ),
                                   elevation: 0.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00FFFFFF),
                                     width: 0.0,
                                   ),
                                   borderRadius: BorderRadius.circular(8.0),
-                                  hoverColor: Color(0x00FFFFFF),
-                                  hoverBorderSide: BorderSide(
+                                  hoverColor: const Color(0x00FFFFFF),
+                                  hoverBorderSide: const BorderSide(
                                     color: Color(0x00FFFFFF),
                                     width: 0.0,
                                   ),
-                                  hoverTextColor: Color(0xFFDD5E5F),
+                                  hoverTextColor: const Color(0xFFDD5E5F),
                                 ),
                                 showLoadingIndicator: false,
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(-1.00, 0.00),
+                              alignment: const AlignmentDirectional(-1.00, 0.00),
                               child: FFButtonWidget(
                                 onPressed: () async {
                                   context.pushNamed(
                                     'AboutPage',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType: PageTransitionType.fade,
                                         duration: Duration(milliseconds: 0),
@@ -474,11 +471,11 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                                 text: 'About',
                                 options: FFButtonOptions(
                                   width: 48.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: Color(0x00FFFFFF),
+                                  color: const Color(0x00FFFFFF),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -493,34 +490,34 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                                         fontWeight: FontWeight.w600,
                                       ),
                                   elevation: 0.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00FFFFFF),
                                     width: 0.0,
                                   ),
                                   borderRadius: BorderRadius.circular(8.0),
-                                  hoverColor: Color(0x00FFFFFF),
-                                  hoverBorderSide: BorderSide(
+                                  hoverColor: const Color(0x00FFFFFF),
+                                  hoverBorderSide: const BorderSide(
                                     color: Color(0x00FFFFFF),
                                     width: 0.0,
                                   ),
-                                  hoverTextColor: Color(0xFFDD5E5F),
+                                  hoverTextColor: const Color(0xFFDD5E5F),
                                 ),
                                 showLoadingIndicator: false,
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(-1.00, 0.00),
+                              alignment: const AlignmentDirectional(-1.00, 0.00),
                               child: FFButtonWidget(
                                 onPressed: () {
                                   print('Button pressed ...');
                                 },
                                 text: 'Download',
                                 options: FFButtonOptions(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: Color(0x00FFFFFF),
+                                  color: const Color(0x00FFFFFF),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -531,17 +528,17 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                                         fontWeight: FontWeight.w600,
                                       ),
                                   elevation: 0.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00FFFFFF),
                                     width: 0.0,
                                   ),
                                   borderRadius: BorderRadius.circular(8.0),
-                                  hoverColor: Color(0x00FFFFFF),
-                                  hoverBorderSide: BorderSide(
+                                  hoverColor: const Color(0x00FFFFFF),
+                                  hoverBorderSide: const BorderSide(
                                     color: Color(0x00FFFFFF),
                                     width: 0.0,
                                   ),
-                                  hoverTextColor: Color(0xFFDD5E5F),
+                                  hoverTextColor: const Color(0xFFDD5E5F),
                                 ),
                                 showLoadingIndicator: false,
                               ),
@@ -557,9 +554,9 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(1.00, -1.00),
+                        alignment: const AlignmentDirectional(1.00, -1.00),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               20.0, 20.0, 20.0, 20.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
@@ -593,7 +590,7 @@ class _MenuBarWidgetState extends State<MenuBarWidget>
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.00, 0.00),
+                                alignment: const AlignmentDirectional(0.00, 0.00),
                                 child: FaIcon(
                                   FontAwesomeIcons.bars,
                                   color: FlutterFlowTheme.of(context)

@@ -5,7 +5,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
@@ -17,7 +16,7 @@ import 'home_page_model.dart';
 export 'home_page_model.dart';
 
 class HomePageWidget extends StatefulWidget {
-  const HomePageWidget({Key? key}) : super(key: key);
+  const HomePageWidget({super.key});
 
   @override
   _HomePageWidgetState createState() => _HomePageWidgetState();
@@ -91,8 +90,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
           curve: Curves.easeInOut,
           delay: 600.ms,
           duration: 600.ms,
-          begin: Offset(-1000.0, 0.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(-1000.0, 0.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -124,8 +123,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
           curve: Curves.easeInOut,
           delay: 600.ms,
           duration: 600.ms,
-          begin: Offset(1000.0, 0.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(1000.0, 0.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -163,7 +162,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           delay: 0.ms,
           duration: 300.ms,
           hz: 2,
-          offset: Offset(0.0, 0.0),
+          offset: const Offset(0.0, 0.0),
           rotation: 1.571,
         ),
       ],
@@ -177,7 +176,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           delay: 0.ms,
           duration: 300.ms,
           hz: 2,
-          offset: Offset(0.0, 0.0),
+          offset: const Offset(0.0, 0.0),
           rotation: 1.571,
         ),
       ],
@@ -223,8 +222,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
           curve: Curves.easeInOut,
           delay: 600.ms,
           duration: 600.ms,
-          begin: Offset(-1000.0, 0.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(-1000.0, 0.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -314,7 +313,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 80.0, 40.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -344,11 +343,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   },
                                   text: 'Home',
                                   options: FFButtonOptions(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: Color(0x00FFFFFF),
+                                    color: const Color(0x00FFFFFF),
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
@@ -407,17 +406,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           fontWeight: FontWeight.bold,
                                         ),
                                     elevation: 0.0,
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00FFFFFF),
                                       width: 0.0,
                                     ),
                                     borderRadius: BorderRadius.circular(8.0),
-                                    hoverColor: Color(0x00FFFFFF),
-                                    hoverBorderSide: BorderSide(
+                                    hoverColor: const Color(0x00FFFFFF),
+                                    hoverBorderSide: const BorderSide(
                                       color: Color(0x00FFFFFF),
                                       width: 0.0,
                                     ),
-                                    hoverTextColor: Color(0xFFDD5E5F),
+                                    hoverTextColor: const Color(0xFFDD5E5F),
                                   ),
                                   showLoadingIndicator: false,
                                 ),
@@ -426,7 +425,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     context.pushNamed(
                                       'AboutPage',
                                       extra: <String, dynamic>{
-                                        kTransitionInfoKey: TransitionInfo(
+                                        kTransitionInfoKey: const TransitionInfo(
                                           hasTransition: true,
                                           transitionType:
                                               PageTransitionType.fade,
@@ -441,11 +440,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   },
                                   text: 'About',
                                   options: FFButtonOptions(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: Color(0x00FFFFFF),
+                                    color: const Color(0x00FFFFFF),
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
@@ -503,17 +502,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           fontWeight: FontWeight.bold,
                                         ),
                                     elevation: 0.0,
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00FFFFFF),
                                       width: 0.0,
                                     ),
                                     borderRadius: BorderRadius.circular(8.0),
-                                    hoverColor: Color(0x00FFFFFF),
-                                    hoverBorderSide: BorderSide(
+                                    hoverColor: const Color(0x00FFFFFF),
+                                    hoverBorderSide: const BorderSide(
                                       color: Color(0x00FFFFFF),
                                       width: 0.0,
                                     ),
-                                    hoverTextColor: Color(0xFFDD5E5F),
+                                    hoverTextColor: const Color(0xFFDD5E5F),
                                   ),
                                   showLoadingIndicator: false,
                                 ),
@@ -523,11 +522,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   },
                                   text: 'Download',
                                   options: FFButtonOptions(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: Color(0x00FFFFFF),
+                                    color: const Color(0x00FFFFFF),
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
@@ -581,17 +580,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           fontWeight: FontWeight.bold,
                                         ),
                                     elevation: 0.0,
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00FFFFFF),
                                       width: 0.0,
                                     ),
                                     borderRadius: BorderRadius.circular(8.0),
-                                    hoverColor: Color(0x000FFFFF),
-                                    hoverBorderSide: BorderSide(
+                                    hoverColor: const Color(0x000FFFFF),
+                                    hoverBorderSide: const BorderSide(
                                       color: Color(0x000FFFFF),
                                       width: 0.0,
                                     ),
-                                    hoverTextColor: Color(0xFFDD5E5F),
+                                    hoverTextColor: const Color(0xFFDD5E5F),
                                   ),
                                   showLoadingIndicator: false,
                                 ),
@@ -652,434 +651,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                     MouseRegion(
                       opaque: false,
                       cursor: MouseCursor.defer ?? MouseCursor.defer,
-                      child: Visibility(
-                        visible: responsiveVisibility(
-                          context: context,
-                          phone: false,
-                          tablet: false,
-                          tabletLandscape: false,
-                        ),
-                        child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 20.0, 0.0, 0.0),
-                          child: InkWell(
-                            splashColor: Colors.transparent,
-                            focusColor: Colors.transparent,
-                            hoverColor: Colors.transparent,
-                            highlightColor: Colors.transparent,
-                            onDoubleTap: () async {
-                              await _model.columnController?.animateTo(
-                                0,
-                                duration: Duration(milliseconds: 100),
-                                curve: Curves.ease,
-                              );
-                            },
-                            child: Container(
-                              width: MediaQuery.sizeOf(context).width * 1.0,
-                              decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  fit: BoxFit.fill,
-                                  image: Image.asset(
-                                    'assets/images/Website_Home_A.png',
-                                  ).image,
-                                ),
-                              ),
-                              child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    100.0, 300.0, 100.0, 300.0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.sizeOf(context).width *
-                                          0.35,
-                                      decoration: BoxDecoration(),
-                                      alignment:
-                                          AlignmentDirectional(-1.00, 0.00),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          Align(
-                                            alignment: AlignmentDirectional(
-                                                0.00, -1.00),
-                                            child: SelectionArea(
-                                                child: Text(
-                                              'Discover',
-                                              textAlign: TextAlign.center,
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .bodyMedium
-                                                  .override(
-                                                    fontFamily: 'Poppins',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryBackground,
-                                                    fontSize: () {
-                                                      if ((MediaQuery.sizeOf(context).width >=
-                                                              1280.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1439.0)) {
-                                                        return 25.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1440.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1511.0)) {
-                                                        return 28.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1512.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1535.0)) {
-                                                        return 30.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1536.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1727.0)) {
-                                                        return 32.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1728.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1919.0)) {
-                                                        return 37.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1920.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              2239.0)) {
-                                                        return 40.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              2240.0) &&
-                                                          (MediaQuery.sizeOf(context)
-                                                                  .width <=
-                                                              2559.0)) {
-                                                        return 45.0;
-                                                      } else if (MediaQuery.sizeOf(context)
-                                                              .width >=
-                                                          2560.0) {
-                                                        return 55.0;
-                                                      } else {
-                                                        return 30.0;
-                                                      }
-                                                    }(),
-                                                    fontWeight: FontWeight.bold,
-                                                  ),
-                                            )).animateOnActionTrigger(
-                                                animationsMap[
-                                                    'textOnActionTriggerAnimation1']!,
-                                                hasBeenTriggered:
-                                                    hasTextTriggered1),
-                                          ),
-                                          Align(
-                                            alignment: AlignmentDirectional(
-                                                0.00, -1.00),
-                                            child: SelectionArea(
-                                                child: Text(
-                                              'Kapampangan Cuisine',
-                                              textAlign: TextAlign.center,
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .bodyMedium
-                                                  .override(
-                                                    fontFamily: 'Poppins',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryBackground,
-                                                    fontSize: () {
-                                                      if ((MediaQuery.sizeOf(context).width >=
-                                                              1280.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1439.0)) {
-                                                        return 25.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1440.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1511.0)) {
-                                                        return 28.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1512.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1535.0)) {
-                                                        return 30.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1536.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1727.0)) {
-                                                        return 32.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1728.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1919.0)) {
-                                                        return 37.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1920.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              2239.0)) {
-                                                        return 40.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              2240.0) &&
-                                                          (MediaQuery.sizeOf(context)
-                                                                  .width <=
-                                                              2559.0)) {
-                                                        return 45.0;
-                                                      } else if (MediaQuery.sizeOf(context)
-                                                              .width >=
-                                                          2560.0) {
-                                                        return 55.0;
-                                                      } else {
-                                                        return 30.0;
-                                                      }
-                                                    }(),
-                                                    fontWeight: FontWeight.bold,
-                                                  ),
-                                            )).animateOnActionTrigger(
-                                                animationsMap[
-                                                    'textOnActionTriggerAnimation2']!,
-                                                hasBeenTriggered:
-                                                    hasTextTriggered2),
-                                          ),
-                                          Align(
-                                            alignment: AlignmentDirectional(
-                                                0.00, -1.00),
-                                            child: Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      10.0, 10.0, 10.0, 10.0),
-                                              child: SelectionArea(
-                                                  child: Text(
-                                                'Embark on a delightful journey through the world of Kapampangan cuisine with the Kapam-Pamangan app. Access a wide range of over 150+ Kapampangan recipes, from mouthwatering main dishes to savory soups and delightful desserts. Find your favorites and start a culinary adventure today!',
-                                                textAlign: TextAlign.justify,
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Poppins',
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .secondaryBackground,
-                                                      fontSize: () {
-                                                        if ((MediaQuery.sizeOf(context).width >=
-                                                                1280.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1439.0)) {
-                                                          return 16.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1440.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1511.0)) {
-                                                          return 18.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1512.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1535.0)) {
-                                                          return 20.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1536.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1727.0)) {
-                                                          return 22.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1728.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1919.0)) {
-                                                          return 27.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1920.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                2239.0)) {
-                                                          return 30.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                2240.0) &&
-                                                            (MediaQuery.sizeOf(context)
-                                                                    .width <=
-                                                                2559.0)) {
-                                                          return 35.0;
-                                                        } else if (MediaQuery.sizeOf(context)
-                                                                .width >=
-                                                            2560.0) {
-                                                          return 45.0;
-                                                        } else {
-                                                          return 20.0;
-                                                        }
-                                                      }(),
-                                                      fontWeight:
-                                                          FontWeight.normal,
-                                                    ),
-                                              )).animateOnActionTrigger(
-                                                  animationsMap[
-                                                      'textOnActionTriggerAnimation3']!,
-                                                  hasBeenTriggered:
-                                                      hasTextTriggered3),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    Align(
-                                      alignment:
-                                          AlignmentDirectional(1.00, 0.00),
-                                      child: Container(
-                                        width:
-                                            MediaQuery.sizeOf(context).width *
-                                                0.35,
-                                        decoration: BoxDecoration(),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Align(
-                                              alignment: AlignmentDirectional(
-                                                  0.00, -1.00),
-                                              child: SelectionArea(
-                                                  child: Text(
-                                                'App Features',
-                                                textAlign: TextAlign.center,
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Poppins',
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .primaryBackground,
-                                                      fontSize: () {
-                                                        if ((MediaQuery.sizeOf(context).width >=
-                                                                1280.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1439.0)) {
-                                                          return 25.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1440.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1511.0)) {
-                                                          return 28.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1512.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1535.0)) {
-                                                          return 30.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1536.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1727.0)) {
-                                                          return 32.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1728.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1919.0)) {
-                                                          return 37.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1920.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                2239.0)) {
-                                                          return 40.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                2240.0) &&
-                                                            (MediaQuery.sizeOf(context)
-                                                                    .width <=
-                                                                2559.0)) {
-                                                          return 45.0;
-                                                        } else if (MediaQuery.sizeOf(context)
-                                                                .width >=
-                                                            2560.0) {
-                                                          return 55.0;
-                                                        } else {
-                                                          return 30.0;
-                                                        }
-                                                      }(),
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                    ),
-                                              )).animateOnActionTrigger(
-                                                  animationsMap[
-                                                      'textOnActionTriggerAnimation4']!,
-                                                  hasBeenTriggered:
-                                                      hasTextTriggered4),
-                                            ),
-                                            Align(
-                                              alignment: AlignmentDirectional(
-                                                  0.00, -1.00),
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        10.0, 10.0, 10.0, 10.0),
-                                                child: SelectionArea(
-                                                    child: Text(
-                                                  'Explore Kapampangan cuisine like never before with the Kapam-Pamangan app, packed with a diverse range of features to enhance your culinary experience. From searching for numerous Kapampangan recipes to generating recommended dishes based on available ingredients, our app is your indispensable kitchen companion. Dive into the world of Kapampangan cooking with step-by-step cooking instructions, meal planning tools, and more!',
-                                                  textAlign: TextAlign.justify,
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .primaryBackground,
-                                                        fontSize: () {
-                                                          if ((MediaQuery.sizeOf(context).width >=
-                                                                  1280.0) &&
-                                                              (MediaQuery.sizeOf(context).width <=
-                                                                  1439.0)) {
-                                                            return 16.0;
-                                                          } else if ((MediaQuery.sizeOf(context).width >=
-                                                                  1440.0) &&
-                                                              (MediaQuery.sizeOf(context).width <=
-                                                                  1511.0)) {
-                                                            return 18.0;
-                                                          } else if ((MediaQuery.sizeOf(context).width >=
-                                                                  1512.0) &&
-                                                              (MediaQuery.sizeOf(context).width <=
-                                                                  1535.0)) {
-                                                            return 20.0;
-                                                          } else if ((MediaQuery.sizeOf(context).width >=
-                                                                  1536.0) &&
-                                                              (MediaQuery.sizeOf(context).width <=
-                                                                  1727.0)) {
-                                                            return 22.0;
-                                                          } else if ((MediaQuery.sizeOf(context).width >=
-                                                                  1728.0) &&
-                                                              (MediaQuery.sizeOf(context).width <=
-                                                                  1919.0)) {
-                                                            return 27.0;
-                                                          } else if ((MediaQuery.sizeOf(context).width >=
-                                                                  1920.0) &&
-                                                              (MediaQuery.sizeOf(context)
-                                                                      .width <=
-                                                                  2239.0)) {
-                                                            return 30.0;
-                                                          } else if ((MediaQuery.sizeOf(context)
-                                                                      .width >=
-                                                                  2240.0) &&
-                                                              (MediaQuery.sizeOf(context)
-                                                                      .width <=
-                                                                  2559.0)) {
-                                                            return 35.0;
-                                                          } else if (MediaQuery.sizeOf(context)
-                                                                  .width >=
-                                                              2560.0) {
-                                                            return 45.0;
-                                                          } else {
-                                                            return 20.0;
-                                                          }
-                                                        }(),
-                                                        fontWeight:
-                                                            FontWeight.normal,
-                                                      ),
-                                                )).animateOnActionTrigger(
-                                                    animationsMap[
-                                                        'textOnActionTriggerAnimation5']!,
-                                                    hasBeenTriggered:
-                                                        hasTextTriggered5),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ].divide(SizedBox(height: 400.0)),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
                       onEnter: ((event) async {
                         setState(() => _model.mouseRegionHovered1 = true);
                         if (animationsMap['textOnActionTriggerAnimation1'] !=
@@ -1161,6 +732,434 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               .reverse();
                         }
                       }),
+                      child: Visibility(
+                        visible: responsiveVisibility(
+                          context: context,
+                          phone: false,
+                          tablet: false,
+                          tabletLandscape: false,
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              0.0, 20.0, 0.0, 0.0),
+                          child: InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onDoubleTap: () async {
+                              await _model.columnController?.animateTo(
+                                0,
+                                duration: const Duration(milliseconds: 100),
+                                curve: Curves.ease,
+                              );
+                            },
+                            child: Container(
+                              width: MediaQuery.sizeOf(context).width * 1.0,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: Image.asset(
+                                    'assets/images/Website_Home_A.png',
+                                  ).image,
+                                ),
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    100.0, 300.0, 100.0, 300.0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.sizeOf(context).width *
+                                          0.35,
+                                      decoration: const BoxDecoration(),
+                                      alignment:
+                                          const AlignmentDirectional(-1.00, 0.00),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Align(
+                                            alignment: const AlignmentDirectional(
+                                                0.00, -1.00),
+                                            child: SelectionArea(
+                                                child: Text(
+                                              'Discover',
+                                              textAlign: TextAlign.center,
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Poppins',
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primaryBackground,
+                                                    fontSize: () {
+                                                      if ((MediaQuery.sizeOf(context).width >=
+                                                              1280.0) &&
+                                                          (MediaQuery.sizeOf(context).width <=
+                                                              1439.0)) {
+                                                        return 25.0;
+                                                      } else if ((MediaQuery.sizeOf(context).width >=
+                                                              1440.0) &&
+                                                          (MediaQuery.sizeOf(context).width <=
+                                                              1511.0)) {
+                                                        return 28.0;
+                                                      } else if ((MediaQuery.sizeOf(context).width >=
+                                                              1512.0) &&
+                                                          (MediaQuery.sizeOf(context).width <=
+                                                              1535.0)) {
+                                                        return 30.0;
+                                                      } else if ((MediaQuery.sizeOf(context).width >=
+                                                              1536.0) &&
+                                                          (MediaQuery.sizeOf(context).width <=
+                                                              1727.0)) {
+                                                        return 32.0;
+                                                      } else if ((MediaQuery.sizeOf(context).width >=
+                                                              1728.0) &&
+                                                          (MediaQuery.sizeOf(context).width <=
+                                                              1919.0)) {
+                                                        return 37.0;
+                                                      } else if ((MediaQuery.sizeOf(context).width >=
+                                                              1920.0) &&
+                                                          (MediaQuery.sizeOf(context).width <=
+                                                              2239.0)) {
+                                                        return 40.0;
+                                                      } else if ((MediaQuery.sizeOf(context).width >=
+                                                              2240.0) &&
+                                                          (MediaQuery.sizeOf(context)
+                                                                  .width <=
+                                                              2559.0)) {
+                                                        return 45.0;
+                                                      } else if (MediaQuery.sizeOf(context)
+                                                              .width >=
+                                                          2560.0) {
+                                                        return 55.0;
+                                                      } else {
+                                                        return 30.0;
+                                                      }
+                                                    }(),
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                            )).animateOnActionTrigger(
+                                                animationsMap[
+                                                    'textOnActionTriggerAnimation1']!,
+                                                hasBeenTriggered:
+                                                    hasTextTriggered1),
+                                          ),
+                                          Align(
+                                            alignment: const AlignmentDirectional(
+                                                0.00, -1.00),
+                                            child: SelectionArea(
+                                                child: Text(
+                                              'Kapampangan Cuisine',
+                                              textAlign: TextAlign.center,
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Poppins',
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primaryBackground,
+                                                    fontSize: () {
+                                                      if ((MediaQuery.sizeOf(context).width >=
+                                                              1280.0) &&
+                                                          (MediaQuery.sizeOf(context).width <=
+                                                              1439.0)) {
+                                                        return 25.0;
+                                                      } else if ((MediaQuery.sizeOf(context).width >=
+                                                              1440.0) &&
+                                                          (MediaQuery.sizeOf(context).width <=
+                                                              1511.0)) {
+                                                        return 28.0;
+                                                      } else if ((MediaQuery.sizeOf(context).width >=
+                                                              1512.0) &&
+                                                          (MediaQuery.sizeOf(context).width <=
+                                                              1535.0)) {
+                                                        return 30.0;
+                                                      } else if ((MediaQuery.sizeOf(context).width >=
+                                                              1536.0) &&
+                                                          (MediaQuery.sizeOf(context).width <=
+                                                              1727.0)) {
+                                                        return 32.0;
+                                                      } else if ((MediaQuery.sizeOf(context).width >=
+                                                              1728.0) &&
+                                                          (MediaQuery.sizeOf(context).width <=
+                                                              1919.0)) {
+                                                        return 37.0;
+                                                      } else if ((MediaQuery.sizeOf(context).width >=
+                                                              1920.0) &&
+                                                          (MediaQuery.sizeOf(context).width <=
+                                                              2239.0)) {
+                                                        return 40.0;
+                                                      } else if ((MediaQuery.sizeOf(context).width >=
+                                                              2240.0) &&
+                                                          (MediaQuery.sizeOf(context)
+                                                                  .width <=
+                                                              2559.0)) {
+                                                        return 45.0;
+                                                      } else if (MediaQuery.sizeOf(context)
+                                                              .width >=
+                                                          2560.0) {
+                                                        return 55.0;
+                                                      } else {
+                                                        return 30.0;
+                                                      }
+                                                    }(),
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                            )).animateOnActionTrigger(
+                                                animationsMap[
+                                                    'textOnActionTriggerAnimation2']!,
+                                                hasBeenTriggered:
+                                                    hasTextTriggered2),
+                                          ),
+                                          Align(
+                                            alignment: const AlignmentDirectional(
+                                                0.00, -1.00),
+                                            child: Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      10.0, 10.0, 10.0, 10.0),
+                                              child: SelectionArea(
+                                                  child: Text(
+                                                'Embark on a delightful journey through the world of Kapampangan cuisine with the Kapam-Pamangan app. Access a wide range of over 150+ Kapampangan recipes, from mouthwatering main dishes to savory soups and delightful desserts. Find your favorites and start a culinary adventure today!',
+                                                textAlign: TextAlign.justify,
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      fontFamily: 'Poppins',
+                                                      color: FlutterFlowTheme
+                                                              .of(context)
+                                                          .secondaryBackground,
+                                                      fontSize: () {
+                                                        if ((MediaQuery.sizeOf(context).width >=
+                                                                1280.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1439.0)) {
+                                                          return 16.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1440.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1511.0)) {
+                                                          return 18.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1512.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1535.0)) {
+                                                          return 20.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1536.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1727.0)) {
+                                                          return 22.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1728.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1919.0)) {
+                                                          return 27.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1920.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                2239.0)) {
+                                                          return 30.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                2240.0) &&
+                                                            (MediaQuery.sizeOf(context)
+                                                                    .width <=
+                                                                2559.0)) {
+                                                          return 35.0;
+                                                        } else if (MediaQuery.sizeOf(context)
+                                                                .width >=
+                                                            2560.0) {
+                                                          return 45.0;
+                                                        } else {
+                                                          return 20.0;
+                                                        }
+                                                      }(),
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
+                                              )).animateOnActionTrigger(
+                                                  animationsMap[
+                                                      'textOnActionTriggerAnimation3']!,
+                                                  hasBeenTriggered:
+                                                      hasTextTriggered3),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Align(
+                                      alignment:
+                                          const AlignmentDirectional(1.00, 0.00),
+                                      child: Container(
+                                        width:
+                                            MediaQuery.sizeOf(context).width *
+                                                0.35,
+                                        decoration: const BoxDecoration(),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            Align(
+                                              alignment: const AlignmentDirectional(
+                                                  0.00, -1.00),
+                                              child: SelectionArea(
+                                                  child: Text(
+                                                'App Features',
+                                                textAlign: TextAlign.center,
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      fontFamily: 'Poppins',
+                                                      color: FlutterFlowTheme
+                                                              .of(context)
+                                                          .primaryBackground,
+                                                      fontSize: () {
+                                                        if ((MediaQuery.sizeOf(context).width >=
+                                                                1280.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1439.0)) {
+                                                          return 25.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1440.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1511.0)) {
+                                                          return 28.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1512.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1535.0)) {
+                                                          return 30.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1536.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1727.0)) {
+                                                          return 32.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1728.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1919.0)) {
+                                                          return 37.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1920.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                2239.0)) {
+                                                          return 40.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                2240.0) &&
+                                                            (MediaQuery.sizeOf(context)
+                                                                    .width <=
+                                                                2559.0)) {
+                                                          return 45.0;
+                                                        } else if (MediaQuery.sizeOf(context)
+                                                                .width >=
+                                                            2560.0) {
+                                                          return 55.0;
+                                                        } else {
+                                                          return 30.0;
+                                                        }
+                                                      }(),
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                    ),
+                                              )).animateOnActionTrigger(
+                                                  animationsMap[
+                                                      'textOnActionTriggerAnimation4']!,
+                                                  hasBeenTriggered:
+                                                      hasTextTriggered4),
+                                            ),
+                                            Align(
+                                              alignment: const AlignmentDirectional(
+                                                  0.00, -1.00),
+                                              child: Padding(
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        10.0, 10.0, 10.0, 10.0),
+                                                child: SelectionArea(
+                                                    child: Text(
+                                                  'Explore Kapampangan cuisine like never before with the Kapam-Pamangan app, packed with a diverse range of features to enhance your culinary experience. From searching for numerous Kapampangan recipes to generating recommended dishes based on available ingredients, our app is your indispensable kitchen companion. Dive into the world of Kapampangan cooking with step-by-step cooking instructions, meal planning tools, and more!',
+                                                  textAlign: TextAlign.justify,
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .primaryBackground,
+                                                        fontSize: () {
+                                                          if ((MediaQuery.sizeOf(context).width >=
+                                                                  1280.0) &&
+                                                              (MediaQuery.sizeOf(context).width <=
+                                                                  1439.0)) {
+                                                            return 16.0;
+                                                          } else if ((MediaQuery.sizeOf(context).width >=
+                                                                  1440.0) &&
+                                                              (MediaQuery.sizeOf(context).width <=
+                                                                  1511.0)) {
+                                                            return 18.0;
+                                                          } else if ((MediaQuery.sizeOf(context).width >=
+                                                                  1512.0) &&
+                                                              (MediaQuery.sizeOf(context).width <=
+                                                                  1535.0)) {
+                                                            return 20.0;
+                                                          } else if ((MediaQuery.sizeOf(context).width >=
+                                                                  1536.0) &&
+                                                              (MediaQuery.sizeOf(context).width <=
+                                                                  1727.0)) {
+                                                            return 22.0;
+                                                          } else if ((MediaQuery.sizeOf(context).width >=
+                                                                  1728.0) &&
+                                                              (MediaQuery.sizeOf(context).width <=
+                                                                  1919.0)) {
+                                                            return 27.0;
+                                                          } else if ((MediaQuery.sizeOf(context).width >=
+                                                                  1920.0) &&
+                                                              (MediaQuery.sizeOf(context)
+                                                                      .width <=
+                                                                  2239.0)) {
+                                                            return 30.0;
+                                                          } else if ((MediaQuery.sizeOf(context)
+                                                                      .width >=
+                                                                  2240.0) &&
+                                                              (MediaQuery.sizeOf(context)
+                                                                      .width <=
+                                                                  2559.0)) {
+                                                            return 35.0;
+                                                          } else if (MediaQuery.sizeOf(context)
+                                                                  .width >=
+                                                              2560.0) {
+                                                            return 45.0;
+                                                          } else {
+                                                            return 20.0;
+                                                          }
+                                                        }(),
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
+                                                )).animateOnActionTrigger(
+                                                    animationsMap[
+                                                        'textOnActionTriggerAnimation5']!,
+                                                    hasBeenTriggered:
+                                                        hasTextTriggered5),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ].divide(const SizedBox(height: 400.0)),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
                   if (responsiveVisibility(
                     context: context,
@@ -1171,6 +1170,29 @@ class _HomePageWidgetState extends State<HomePageWidget>
                     MouseRegion(
                       opaque: false,
                       cursor: MouseCursor.defer ?? MouseCursor.defer,
+                      onEnter: ((event) async {
+                        setState(() => _model.mouseRegionHovered2 = true);
+                        if (animationsMap[
+                                'containerOnActionTriggerAnimation'] !=
+                            null) {
+                          setState(() => hasContainerTriggered = true);
+                          SchedulerBinding.instance.addPostFrameCallback(
+                              (_) async => await animationsMap[
+                                      'containerOnActionTriggerAnimation']!
+                                  .controller
+                                  .forward(from: 0.0));
+                        }
+                      }),
+                      onExit: ((event) async {
+                        setState(() => _model.mouseRegionHovered2 = false);
+                        if (animationsMap[
+                                'containerOnActionTriggerAnimation'] !=
+                            null) {
+                          animationsMap['containerOnActionTriggerAnimation']!
+                              .controller
+                              .reverse();
+                        }
+                      }),
                       child: Visibility(
                         visible: responsiveVisibility(
                           context: context,
@@ -1195,7 +1217,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     180.0, 250.0, 180.0, 250.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -1209,14 +1231,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                             .primaryBackground,
                                       ),
                                       alignment:
-                                          AlignmentDirectional(-1.00, 0.00),
+                                          const AlignmentDirectional(-1.00, 0.00),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
                                           Align(
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                 0.00, -1.00),
                                             child: SelectionArea(
                                                 child: Text(
@@ -1280,7 +1302,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                             )),
                                           ),
                                           Align(
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                 0.00, 0.00),
                                             child: RichText(
                                               textScaleFactor:
@@ -1462,10 +1484,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 'richTextOnPageLoadAnimation1']!),
                                           ),
                                           Align(
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                 0.00, 0.00),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 10.0),
                                               child: Container(
@@ -1500,7 +1522,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     57.0, 31.0, 30.0, 31.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -1515,7 +1537,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         context.pushNamed(
                                           'AboutPage',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType:
                                                   PageTransitionType.fade,
@@ -1596,7 +1618,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         context.pushNamed(
                                           'TermsOfUse',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType:
                                                   PageTransitionType.fade,
@@ -1680,7 +1702,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 'PrivacyPolicy',
                                                 extra: <String, dynamic>{
                                                   kTransitionInfoKey:
-                                                      TransitionInfo(
+                                                      const TransitionInfo(
                                                     hasTransition: true,
                                                     transitionType:
                                                         PageTransitionType.fade,
@@ -1815,36 +1837,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         )),
                                       ],
                                     ),
-                                  ].divide(SizedBox(height: 10.0)),
+                                  ].divide(const SizedBox(height: 10.0)),
                                 ),
                               ),
                             ],
                           ),
                         ),
                       ),
-                      onEnter: ((event) async {
-                        setState(() => _model.mouseRegionHovered2 = true);
-                        if (animationsMap[
-                                'containerOnActionTriggerAnimation'] !=
-                            null) {
-                          setState(() => hasContainerTriggered = true);
-                          SchedulerBinding.instance.addPostFrameCallback(
-                              (_) async => await animationsMap[
-                                      'containerOnActionTriggerAnimation']!
-                                  .controller
-                                  .forward(from: 0.0));
-                        }
-                      }),
-                      onExit: ((event) async {
-                        setState(() => _model.mouseRegionHovered2 = false);
-                        if (animationsMap[
-                                'containerOnActionTriggerAnimation'] !=
-                            null) {
-                          animationsMap['containerOnActionTriggerAnimation']!
-                              .controller
-                              .reverse();
-                        }
-                      }),
                     ),
                   if (responsiveVisibility(
                     context: context,
@@ -1881,9 +1880,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(0.00, 0.00),
+                                          const AlignmentDirectional(0.00, 0.00),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             20.0, 20.0, 20.0, 20.0),
                                         child: Container(
                                           width:
@@ -1892,11 +1891,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           height: MediaQuery.sizeOf(context)
                                                   .height *
                                               0.04,
-                                          constraints: BoxConstraints(
+                                          constraints: const BoxConstraints(
                                             maxWidth: 200.0,
                                             maxHeight: 60.0,
                                           ),
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: ClipRRect(
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
@@ -1911,11 +1910,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     Expanded(
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(1.00, 0.00),
+                                            const AlignmentDirectional(1.00, 0.00),
                                         child: Builder(
                                           builder: (context) => Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 20.0, 20.0, 20.0),
                                             child: InkWell(
                                               splashColor: Colors.transparent,
@@ -1937,13 +1936,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   isGlobal: true,
                                                   avoidOverflow: false,
                                                   targetAnchor:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                               0.0, 0.0)
                                                           .resolve(
                                                               Directionality.of(
                                                                   context)),
                                                   followerAnchor:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                               0.0, -1.0)
                                                           .resolve(
                                                               Directionality.of(
@@ -1962,7 +1961,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                             : FocusScope.of(
                                                                     context)
                                                                 .unfocus(),
-                                                        child: MenuBarWidget(),
+                                                        child: const MenuBarWidget(),
                                                       ),
                                                     );
                                                   },
@@ -1980,7 +1979,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.00, 0.00),
                                                   child: FaIcon(
                                                     FontAwesomeIcons.bars,
@@ -2020,23 +2019,23 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   60.0, 350.0, 60.0, 120.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Container(
                                     width: double.infinity,
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 20.0, 0.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 20.0),
                                             child: AutoSizeText(
                                               'Discover  \nKapampangan Cuisine',
@@ -2073,13 +2072,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   ),
                                   Container(
                                     width: double.infinity,
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 20.0),
                                           child: AutoSizeText(
                                             'App Features',
@@ -2112,7 +2111,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       ],
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 390.0)),
+                                ].divide(const SizedBox(height: 390.0)),
                               ),
                             ),
                           ),
@@ -2131,12 +2130,12 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 ).image,
                               ),
                             ),
-                            alignment: AlignmentDirectional(-1.00, 0.00),
+                            alignment: const AlignmentDirectional(-1.00, 0.00),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 90.0, 150.0, 90.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -2172,7 +2171,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                     fontWeight: FontWeight.bold,
                                                   ),
                                             ),
-                                            TextSpan(
+                                            const TextSpan(
                                               text: 'now!',
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
@@ -2195,7 +2194,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         height:
                                             MediaQuery.sizeOf(context).height *
                                                 0.06,
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: ClipRRect(
                                           borderRadius:
                                               BorderRadius.circular(8.0),
@@ -2211,7 +2210,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       15.0, 15.0, 15.0, 15.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
@@ -2220,7 +2219,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, 0.00),
+                                            const AlignmentDirectional(-1.00, 0.00),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
                                           focusColor: Colors.transparent,
@@ -2231,7 +2230,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               'AboutPage',
                                               extra: <String, dynamic>{
                                                 kTransitionInfoKey:
-                                                    TransitionInfo(
+                                                    const TransitionInfo(
                                                   hasTransition: true,
                                                   transitionType:
                                                       PageTransitionType.fade,
@@ -2262,7 +2261,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, 0.00),
+                                            const AlignmentDirectional(-1.00, 0.00),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
                                           focusColor: Colors.transparent,
@@ -2273,7 +2272,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               'TermsOfUse',
                                               extra: <String, dynamic>{
                                                 kTransitionInfoKey:
-                                                    TransitionInfo(
+                                                    const TransitionInfo(
                                                   hasTransition: true,
                                                   transitionType:
                                                       PageTransitionType.fade,
@@ -2307,7 +2306,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         children: [
                                           Expanded(
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.00, 0.00),
                                               child: InkWell(
                                                 splashColor: Colors.transparent,
@@ -2320,7 +2319,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                     'PrivacyPolicy',
                                                     extra: <String, dynamic>{
                                                       kTransitionInfoKey:
-                                                          TransitionInfo(
+                                                          const TransitionInfo(
                                                         hasTransition: true,
                                                         transitionType:
                                                             PageTransitionType
@@ -2353,7 +2352,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                             ),
                                           ),
                                           Align(
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                 -1.00, 0.00),
                                             child: Text(
                                               '© 2023 Capstoneers, All Rights Reserved.',
@@ -2414,9 +2413,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(0.00, 0.00),
+                                          const AlignmentDirectional(0.00, 0.00),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             20.0, 20.0, 20.0, 20.0),
                                         child: Container(
                                           width:
@@ -2425,11 +2424,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           height: MediaQuery.sizeOf(context)
                                                   .height *
                                               0.05,
-                                          constraints: BoxConstraints(
+                                          constraints: const BoxConstraints(
                                             maxWidth: 200.0,
                                             maxHeight: 60.0,
                                           ),
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: ClipRRect(
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
@@ -2444,11 +2443,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     Expanded(
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(1.00, 0.00),
+                                            const AlignmentDirectional(1.00, 0.00),
                                         child: Builder(
                                           builder: (context) => Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 20.0, 20.0, 20.0),
                                             child: InkWell(
                                               splashColor: Colors.transparent,
@@ -2470,13 +2469,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   isGlobal: true,
                                                   avoidOverflow: false,
                                                   targetAnchor:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                               0.0, 0.0)
                                                           .resolve(
                                                               Directionality.of(
                                                                   context)),
                                                   followerAnchor:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                               0.0, -1.0)
                                                           .resolve(
                                                               Directionality.of(
@@ -2495,7 +2494,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                             : FocusScope.of(
                                                                     context)
                                                                 .unfocus(),
-                                                        child: MenuBarWidget(),
+                                                        child: const MenuBarWidget(),
                                                       ),
                                                     );
                                                   },
@@ -2513,7 +2512,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.00, 0.00),
                                                   child: FaIcon(
                                                     FontAwesomeIcons.bars,
@@ -2554,7 +2553,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   40.0, 100.0, 40.0, 100.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -2563,15 +2562,15 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   Container(
                                     width:
                                         MediaQuery.sizeOf(context).width * 0.4,
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     alignment:
-                                        AlignmentDirectional(-1.00, 0.00),
+                                        const AlignmentDirectional(-1.00, 0.00),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, -1.00),
+                                              const AlignmentDirectional(0.00, -1.00),
                                           child: SelectionArea(
                                               child: Text(
                                             'Discover',
@@ -2603,7 +2602,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, -1.00),
+                                              const AlignmentDirectional(0.00, -1.00),
                                           child: SelectionArea(
                                               child: Text(
                                             'Kapampangan Cuisine',
@@ -2635,10 +2634,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, -1.00),
+                                              const AlignmentDirectional(0.00, -1.00),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 10.0, 10.0, 10.0),
                                             child: SelectionArea(
                                                 child: Text(
@@ -2676,16 +2675,16 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(1.00, 0.00),
+                                    alignment: const AlignmentDirectional(1.00, 0.00),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
                                           0.4,
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Align(
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                 0.00, -1.00),
                                             child: SelectionArea(
                                                 child: Text(
@@ -2714,10 +2713,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                             )),
                                           ),
                                           Align(
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                 0.00, -1.00),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       10.0, 10.0, 10.0, 10.0),
                                               child: SelectionArea(
@@ -2752,7 +2751,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 100.0)),
+                                ].divide(const SizedBox(height: 100.0)),
                               ),
                             ),
                           ),
@@ -2772,12 +2771,12 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 ).image,
                               ),
                             ),
-                            alignment: AlignmentDirectional(-1.00, 0.00),
+                            alignment: const AlignmentDirectional(-1.00, 0.00),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 50.0, 400.0, 100.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -2788,16 +2787,16 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         width:
                                             MediaQuery.sizeOf(context).width *
                                                 0.35,
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         alignment:
-                                            AlignmentDirectional(-1.00, 0.00),
+                                            const AlignmentDirectional(-1.00, 0.00),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.00, -1.00),
                                               child: SelectionArea(
                                                   child: Text(
@@ -2818,7 +2817,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               )),
                                             ),
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.00, 0.00),
                                               child: RichText(
                                                 textScaleFactor:
@@ -2870,10 +2869,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   'richTextOnPageLoadAnimation2']!),
                                             ),
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.00, 0.00),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 10.0),
                                                 child: Container(
@@ -2904,7 +2903,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       15.0, 15.0, 15.0, 15.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
@@ -2913,7 +2912,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, 0.00),
+                                            const AlignmentDirectional(-1.00, 0.00),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
                                           focusColor: Colors.transparent,
@@ -2924,7 +2923,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               'AboutPage',
                                               extra: <String, dynamic>{
                                                 kTransitionInfoKey:
-                                                    TransitionInfo(
+                                                    const TransitionInfo(
                                                   hasTransition: true,
                                                   transitionType:
                                                       PageTransitionType.fade,
@@ -2955,7 +2954,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, 0.00),
+                                            const AlignmentDirectional(-1.00, 0.00),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
                                           focusColor: Colors.transparent,
@@ -2966,7 +2965,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               'TermsOfUse',
                                               extra: <String, dynamic>{
                                                 kTransitionInfoKey:
-                                                    TransitionInfo(
+                                                    const TransitionInfo(
                                                   hasTransition: true,
                                                   transitionType:
                                                       PageTransitionType.fade,
@@ -3000,7 +2999,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         children: [
                                           Expanded(
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.00, 0.00),
                                               child: InkWell(
                                                 splashColor: Colors.transparent,
@@ -3013,7 +3012,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                     'PrivacyPolicy',
                                                     extra: <String, dynamic>{
                                                       kTransitionInfoKey:
-                                                          TransitionInfo(
+                                                          const TransitionInfo(
                                                         hasTransition: true,
                                                         transitionType:
                                                             PageTransitionType
@@ -3046,7 +3045,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                             ),
                                           ),
                                           Align(
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                 -1.00, 0.00),
                                             child: Text(
                                               '© 2023 Capstoneers, All Rights Reserved.',

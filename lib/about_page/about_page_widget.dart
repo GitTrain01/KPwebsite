@@ -5,17 +5,15 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'about_page_model.dart';
 export 'about_page_model.dart';
 
 class AboutPageWidget extends StatefulWidget {
-  const AboutPageWidget({Key? key}) : super(key: key);
+  const AboutPageWidget({super.key});
 
   @override
   _AboutPageWidgetState createState() => _AboutPageWidgetState();
@@ -49,7 +47,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
           delay: 0.ms,
           duration: 300.ms,
           hz: 2,
-          offset: Offset(0.0, 0.0),
+          offset: const Offset(0.0, 0.0),
           rotation: 1.571,
         ),
       ],
@@ -63,7 +61,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
           delay: 0.ms,
           duration: 300.ms,
           hz: 2,
-          offset: Offset(0.0, 0.0),
+          offset: const Offset(0.0, 0.0),
           rotation: 1.571,
         ),
       ],
@@ -131,7 +129,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                       image: DecorationImage(
                         fit: BoxFit.fill,
-                        alignment: AlignmentDirectional(0.00, -1.00),
+                        alignment: const AlignmentDirectional(0.00, -1.00),
                         image: Image.asset(
                           'assets/images/Website_About.png',
                         ).image,
@@ -146,7 +144,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     80.0, 40.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -157,7 +155,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                       height:
                                           MediaQuery.sizeOf(context).height *
                                               0.06,
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(8.0),
@@ -172,7 +170,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                         context.pushNamed(
                                           'HomePage',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType:
                                                   PageTransitionType.fade,
@@ -188,12 +186,12 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                       },
                                       text: 'Home',
                                       options: FFButtonOptions(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0x00FFFFFF),
+                                        color: const Color(0x00FFFFFF),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
@@ -201,7 +199,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                               color: FFAppState()
                                                           .MenuBtnColor ==
                                                       'Home'
-                                                  ? Color(0xFF6A994E)
+                                                  ? const Color(0xFF6A994E)
                                                   : FlutterFlowTheme.of(context)
                                                       .primaryBackground,
                                               fontSize: () {
@@ -250,18 +248,18 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                               fontWeight: FontWeight.bold,
                                             ),
                                         elevation: 0.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00FFFFFF),
                                           width: 0.0,
                                         ),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
-                                        hoverColor: Color(0x00FFFFFF),
-                                        hoverBorderSide: BorderSide(
+                                        hoverColor: const Color(0x00FFFFFF),
+                                        hoverBorderSide: const BorderSide(
                                           color: Color(0x00FFFFFF),
                                           width: 0.0,
                                         ),
-                                        hoverTextColor: Color(0xFFA7C957),
+                                        hoverTextColor: const Color(0xFFA7C957),
                                       ),
                                       showLoadingIndicator: false,
                                     ),
@@ -275,12 +273,12 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                       },
                                       text: 'About',
                                       options: FFButtonOptions(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0x00FFFFFF),
+                                        color: const Color(0x00FFFFFF),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
@@ -288,7 +286,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                               color: FFAppState()
                                                           .MenuBtnColor ==
                                                       'About'
-                                                  ? Color(0xFF6A994E)
+                                                  ? const Color(0xFF6A994E)
                                                   : FlutterFlowTheme.of(context)
                                                       .primaryBackground,
                                               fontSize: () {
@@ -337,18 +335,18 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                               fontWeight: FontWeight.bold,
                                             ),
                                         elevation: 0.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00FFFFFF),
                                           width: 0.0,
                                         ),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
-                                        hoverColor: Color(0x00FFFFFF),
-                                        hoverBorderSide: BorderSide(
+                                        hoverColor: const Color(0x00FFFFFF),
+                                        hoverBorderSide: const BorderSide(
                                           color: Color(0x00FFFFFF),
                                           width: 0.0,
                                         ),
-                                        hoverTextColor: Color(0xFFA7C957),
+                                        hoverTextColor: const Color(0xFFA7C957),
                                       ),
                                       showLoadingIndicator: false,
                                     ),
@@ -358,12 +356,12 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                       },
                                       text: 'Download',
                                       options: FFButtonOptions(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0x00FFFFFF),
+                                        color: const Color(0x00FFFFFF),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
@@ -417,18 +415,18 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                               fontWeight: FontWeight.bold,
                                             ),
                                         elevation: 0.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00FFFFFF),
                                           width: 0.0,
                                         ),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
-                                        hoverColor: Color(0x000FFFFF),
-                                        hoverBorderSide: BorderSide(
+                                        hoverColor: const Color(0x000FFFFF),
+                                        hoverBorderSide: const BorderSide(
                                           color: Color(0x000FFFFF),
                                           width: 0.0,
                                         ),
-                                        hoverTextColor: Color(0xFFA7C957),
+                                        hoverTextColor: const Color(0xFFA7C957),
                                       ),
                                       showLoadingIndicator: false,
                                     ),
@@ -483,9 +481,9 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                               Expanded(
                                 child: Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 100.0, 0.0, 0.0),
                                     child: SingleChildScrollView(
                                       child: Column(
@@ -493,7 +491,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     50.0, 50.0, 50.0, 50.0),
                                             child: Container(
                                               width: MediaQuery.sizeOf(context)
@@ -502,7 +500,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                               height: MediaQuery.sizeOf(context)
                                                       .height *
                                                   0.25,
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
@@ -519,7 +517,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                 MainAxisAlignment.center,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 50.0),
                                                 child: Container(
@@ -534,7 +532,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 10.0,
                                                                 0.0, 0.0),
                                                     child: Column(
@@ -543,11 +541,11 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                       children: [
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   -1.00, 0.00),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         35.0,
@@ -615,7 +613,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       10.0,
                                                                       10.0,
@@ -681,11 +679,11 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                         ),
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   -1.00, 0.00),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         25.0,
@@ -753,7 +751,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       10.0,
                                                                       10.0,
@@ -817,7 +815,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                                 ),
                                                           )),
                                                         ),
-                                                      ].addToEnd(SizedBox(
+                                                      ].addToEnd(const SizedBox(
                                                           height: 50.0)),
                                                     ),
                                                   ),
@@ -864,7 +862,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 26.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -874,10 +872,10 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                     Expanded(
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, 0.00),
+                                            const AlignmentDirectional(-1.00, 0.00),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 20.0, 20.0, 20.0),
                                           child: Container(
                                             width: MediaQuery.sizeOf(context)
@@ -886,11 +884,11 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                             height: MediaQuery.sizeOf(context)
                                                     .height *
                                                 0.04,
-                                            constraints: BoxConstraints(
+                                            constraints: const BoxConstraints(
                                               maxWidth: 200.0,
                                               maxHeight: 60.0,
                                             ),
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                             child: ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
@@ -906,11 +904,11 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                     Expanded(
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(1.00, 0.00),
+                                            const AlignmentDirectional(1.00, 0.00),
                                         child: Builder(
                                           builder: (context) => Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 20.0, 20.0, 20.0),
                                             child: InkWell(
                                               splashColor: Colors.transparent,
@@ -932,13 +930,13 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                   isGlobal: true,
                                                   avoidOverflow: false,
                                                   targetAnchor:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                               0.0, 0.0)
                                                           .resolve(
                                                               Directionality.of(
                                                                   context)),
                                                   followerAnchor:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                               0.0, -1.0)
                                                           .resolve(
                                                               Directionality.of(
@@ -957,7 +955,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                             : FocusScope.of(
                                                                     context)
                                                                 .unfocus(),
-                                                        child: MenuBarWidget(),
+                                                        child: const MenuBarWidget(),
                                                       ),
                                                     );
                                                   },
@@ -975,7 +973,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.00, 0.00),
                                                   child: FaIcon(
                                                     FontAwesomeIcons.bars,
@@ -1014,7 +1012,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 26.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -1024,10 +1022,10 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                     Expanded(
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, 0.00),
+                                            const AlignmentDirectional(-1.00, 0.00),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 20.0, 20.0, 20.0),
                                           child: Container(
                                             width: MediaQuery.sizeOf(context)
@@ -1036,11 +1034,11 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                             height: MediaQuery.sizeOf(context)
                                                     .height *
                                                 0.05,
-                                            constraints: BoxConstraints(
+                                            constraints: const BoxConstraints(
                                               maxWidth: 200.0,
                                               maxHeight: 60.0,
                                             ),
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                             child: ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
@@ -1056,11 +1054,11 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                     Expanded(
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(1.00, 0.00),
+                                            const AlignmentDirectional(1.00, 0.00),
                                         child: Builder(
                                           builder: (context) => Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 20.0, 20.0, 20.0),
                                             child: InkWell(
                                               splashColor: Colors.transparent,
@@ -1082,13 +1080,13 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                   isGlobal: true,
                                                   avoidOverflow: false,
                                                   targetAnchor:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                               0.0, 0.0)
                                                           .resolve(
                                                               Directionality.of(
                                                                   context)),
                                                   followerAnchor:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                               0.0, -1.0)
                                                           .resolve(
                                                               Directionality.of(
@@ -1107,7 +1105,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                             : FocusScope.of(
                                                                     context)
                                                                 .unfocus(),
-                                                        child: MenuBarWidget(),
+                                                        child: const MenuBarWidget(),
                                                       ),
                                                     );
                                                   },
@@ -1125,7 +1123,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.00, 0.00),
                                                   child: FaIcon(
                                                     FontAwesomeIcons.bars,
@@ -1163,7 +1161,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 50.0, 0.0, 0.0),
                                       child: SingleChildScrollView(
                                         child: Column(
@@ -1173,11 +1171,11 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                               width: MediaQuery.sizeOf(context)
                                                       .width *
                                                   0.6,
-                                              constraints: BoxConstraints(
+                                              constraints: const BoxConstraints(
                                                 maxWidth: 300.0,
                                                 maxHeight: 300.0,
                                               ),
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
@@ -1188,7 +1186,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       10.0, 10.0, 10.0, 10.0),
                                               child: SingleChildScrollView(
@@ -1198,11 +1196,11 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               -1.00, 0.00),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     10.0,
                                                                     35.0,
@@ -1226,7 +1224,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   10.0,
@@ -1244,11 +1242,11 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                     ),
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               -1.00, 0.00),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     10.0,
                                                                     25.0,
@@ -1272,7 +1270,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   10.0,
@@ -1290,11 +1288,11 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                     ),
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               -1.00, 0.00),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     10.0,
                                                                     25.0,
@@ -1318,7 +1316,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   10.0,
@@ -1336,11 +1334,11 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                     ),
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               -1.00, 0.00),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     10.0,
                                                                     25.0,
@@ -1364,7 +1362,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   10.0,
@@ -1381,7 +1379,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                       ),
                                                     ),
                                                   ].addToEnd(
-                                                      SizedBox(height: 50.0)),
+                                                      const SizedBox(height: 50.0)),
                                                 ),
                                               ),
                                             ),

@@ -6,17 +6,15 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'terms_of_use_model.dart';
 export 'terms_of_use_model.dart';
 
 class TermsOfUseWidget extends StatefulWidget {
-  const TermsOfUseWidget({Key? key}) : super(key: key);
+  const TermsOfUseWidget({super.key});
 
   @override
   _TermsOfUseWidgetState createState() => _TermsOfUseWidgetState();
@@ -50,7 +48,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
           delay: 0.ms,
           duration: 300.ms,
           hz: 2,
-          offset: Offset(0.0, 0.0),
+          offset: const Offset(0.0, 0.0),
           rotation: 1.571,
         ),
       ],
@@ -64,7 +62,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
           delay: 0.ms,
           duration: 300.ms,
           hz: 2,
-          offset: Offset(0.0, 0.0),
+          offset: const Offset(0.0, 0.0),
           rotation: 1.571,
         ),
       ],
@@ -132,7 +130,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                       image: DecorationImage(
                         fit: BoxFit.fill,
-                        alignment: AlignmentDirectional(0.00, -1.00),
+                        alignment: const AlignmentDirectional(0.00, -1.00),
                         image: Image.asset(
                           'assets/images/Website_About.png',
                         ).image,
@@ -147,7 +145,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     80.0, 40.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -158,7 +156,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                       height:
                                           MediaQuery.sizeOf(context).height *
                                               0.05,
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(8.0),
@@ -173,7 +171,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                         context.pushNamed(
                                           'HomePage',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType:
                                                   PageTransitionType.fade,
@@ -189,12 +187,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                       },
                                       text: 'Home',
                                       options: FFButtonOptions(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0x00FFFFFF),
+                                        color: const Color(0x00FFFFFF),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
@@ -202,7 +200,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                               color: FFAppState()
                                                           .MenuBtnColor ==
                                                       'Home'
-                                                  ? Color(0xFF6A994E)
+                                                  ? const Color(0xFF6A994E)
                                                   : FlutterFlowTheme.of(context)
                                                       .primaryBackground,
                                               fontSize: () {
@@ -251,18 +249,18 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                               fontWeight: FontWeight.bold,
                                             ),
                                         elevation: 0.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00FFFFFF),
                                           width: 0.0,
                                         ),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
-                                        hoverColor: Color(0x00FFFFFF),
-                                        hoverBorderSide: BorderSide(
+                                        hoverColor: const Color(0x00FFFFFF),
+                                        hoverBorderSide: const BorderSide(
                                           color: Color(0x00FFFFFF),
                                           width: 0.0,
                                         ),
-                                        hoverTextColor: Color(0xFFA7C957),
+                                        hoverTextColor: const Color(0xFFA7C957),
                                       ),
                                       showLoadingIndicator: false,
                                     ),
@@ -271,7 +269,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                         context.pushNamed(
                                           'AboutPage',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType:
                                                   PageTransitionType.fade,
@@ -287,12 +285,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                       },
                                       text: 'About',
                                       options: FFButtonOptions(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0x00FFFFFF),
+                                        color: const Color(0x00FFFFFF),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
@@ -300,7 +298,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                               color: FFAppState()
                                                           .MenuBtnColor ==
                                                       'About'
-                                                  ? Color(0xFF6A994E)
+                                                  ? const Color(0xFF6A994E)
                                                   : FlutterFlowTheme.of(context)
                                                       .primaryBackground,
                                               fontSize: () {
@@ -349,18 +347,18 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                               fontWeight: FontWeight.bold,
                                             ),
                                         elevation: 0.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00FFFFFF),
                                           width: 0.0,
                                         ),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
-                                        hoverColor: Color(0x00FFFFFF),
-                                        hoverBorderSide: BorderSide(
+                                        hoverColor: const Color(0x00FFFFFF),
+                                        hoverBorderSide: const BorderSide(
                                           color: Color(0x00FFFFFF),
                                           width: 0.0,
                                         ),
-                                        hoverTextColor: Color(0xFFA7C957),
+                                        hoverTextColor: const Color(0xFFA7C957),
                                       ),
                                       showLoadingIndicator: false,
                                     ),
@@ -370,12 +368,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                       },
                                       text: 'Download',
                                       options: FFButtonOptions(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0x00FFFFFF),
+                                        color: const Color(0x00FFFFFF),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
@@ -429,18 +427,18 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                               fontWeight: FontWeight.bold,
                                             ),
                                         elevation: 0.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00FFFFFF),
                                           width: 0.0,
                                         ),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
-                                        hoverColor: Color(0x000FFFFF),
-                                        hoverBorderSide: BorderSide(
+                                        hoverColor: const Color(0x000FFFFF),
+                                        hoverBorderSide: const BorderSide(
                                           color: Color(0x000FFFFF),
                                           width: 0.0,
                                         ),
-                                        hoverTextColor: Color(0xFFA7C957),
+                                        hoverTextColor: const Color(0xFFA7C957),
                                       ),
                                       showLoadingIndicator: false,
                                     ),
@@ -495,9 +493,9 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                               Expanded(
                                 child: Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 100.0, 0.0, 0.0),
                                     child: SingleChildScrollView(
                                       child: Column(
@@ -509,7 +507,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                 MainAxisAlignment.center,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 50.0),
                                                 child: Container(
@@ -528,7 +526,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 10.0,
                                                                 0.0, 0.0),
                                                     child:
@@ -539,12 +537,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -619,12 +617,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           0.0,
@@ -699,7 +697,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -707,7 +705,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                                         0.0),
                                                             child: SelectionArea(
                                                                 child: AutoSizeText(
-                                                              'We are the Capstoneers (\"Company,\" \"we,\" \"us,\" \"our\"). We operate the mobile application Kapam-Pamangan (the \"App\"), as well as any other related products and services that refer or link to these legal terms (the \"Legal Terms\") (collectively, the \"Services\"). You can contact us by email at bsit3bcapstone@gmail.com.   \n\nThese Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity (\"you\"), and the Capstoneers, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES, AND YOU MUST DISCONTINUE USE IMMEDIATELY.\n\nWe value transparency and are committed to keeping users informed of significant updates to these Terms of Use. While we will make efforts to notify users of substantial changes, it may not always be feasible to notify all users individually. Therefore, it is essential for users to periodically review these terms to stay informed about any updates.\n\nChanges to these Terms of Use will be effective upon posting on our platform, and it is your responsibility to stay informed about the latest policies and guidelines. Continued use of Kapam-Pamangan constitutes acceptance of the revised terms.\n\nThe Services are intended for users who are at least 18 years old, or for users under the age of 18, parental consent is required to use or register for the Services.',
+                                                              'We are the Capstoneers ("Company," "we," "us," "our"). We operate the mobile application Kapam-Pamangan (the "App"), as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services"). You can contact us by email at bsit3bcapstone@gmail.com.   \n\nThese Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you"), and the Capstoneers, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES, AND YOU MUST DISCONTINUE USE IMMEDIATELY.\n\nWe value transparency and are committed to keeping users informed of significant updates to these Terms of Use. While we will make efforts to notify users of substantial changes, it may not always be feasible to notify all users individually. Therefore, it is essential for users to periodically review these terms to stay informed about any updates.\n\nChanges to these Terms of Use will be effective upon posting on our platform, and it is your responsibility to stay informed about the latest policies and guidelines. Continued use of Kapam-Pamangan constitutes acceptance of the revised terms.\n\nThe Services are intended for users who are at least 18 years old, or for users under the age of 18, parental consent is required to use or register for the Services.',
                                                               textAlign:
                                                                   TextAlign
                                                                       .justify,
@@ -768,12 +766,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -848,7 +846,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -916,12 +914,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -996,7 +994,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -1064,12 +1062,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           15.0,
@@ -1144,7 +1142,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -1213,12 +1211,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -1293,7 +1291,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -1362,12 +1360,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -1442,12 +1440,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           0.0,
@@ -1522,7 +1520,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -1591,12 +1589,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           15.0,
@@ -1671,7 +1669,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -1740,12 +1738,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -1818,12 +1816,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           0.0,
@@ -1898,7 +1896,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -1967,12 +1965,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           15.0,
@@ -2047,7 +2045,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -2116,12 +2114,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -2196,12 +2194,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           0.0,
@@ -2276,7 +2274,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -2345,12 +2343,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           15.0,
@@ -2425,7 +2423,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -2494,12 +2492,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -2574,7 +2572,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -2643,12 +2641,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -2723,12 +2721,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           0.0,
@@ -2803,7 +2801,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -2872,12 +2870,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           15.0,
@@ -2952,7 +2950,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -3021,12 +3019,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -3101,7 +3099,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -3170,12 +3168,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -3250,7 +3248,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -3319,12 +3317,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -3399,12 +3397,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           0.0,
@@ -3479,7 +3477,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -3487,7 +3485,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                                         0.0),
                                                             child: SelectionArea(
                                                                 child: AutoSizeText(
-                                                              'Kapam-Pamangan is provided on an \"as-is\" basis. The Capstoneers disclaim responsibility for any damages, losses, or inconveniences resulting from the use of the application. While we strive to offer a seamless and enjoyable experience, users are encouraged to use Kapam-Pamangan responsibly and acknowledge the inherent risks of online interaction.',
+                                                              'Kapam-Pamangan is provided on an "as-is" basis. The Capstoneers disclaim responsibility for any damages, losses, or inconveniences resulting from the use of the application. While we strive to offer a seamless and enjoyable experience, users are encouraged to use Kapam-Pamangan responsibly and acknowledge the inherent risks of online interaction.',
                                                               textAlign:
                                                                   TextAlign
                                                                       .justify,
@@ -3548,12 +3546,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           15.0,
@@ -3628,7 +3626,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -3697,12 +3695,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -3777,7 +3775,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -3846,12 +3844,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -3926,7 +3924,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -3995,12 +3993,12 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.00,
                                                                     0.00),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           25.0,
@@ -4075,7 +4073,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -4142,7 +4140,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                               minFontSize: 12.0,
                                                             )),
                                                           ),
-                                                        ].addToEnd(SizedBox(
+                                                        ].addToEnd(const SizedBox(
                                                             height: 50.0)),
                                                       ),
                                                     ),
@@ -4186,7 +4184,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 26.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -4196,9 +4194,9 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                   Expanded(
                                     child: Align(
                                       alignment:
-                                          AlignmentDirectional(-1.00, 0.00),
+                                          const AlignmentDirectional(-1.00, 0.00),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             20.0, 20.0, 20.0, 20.0),
                                         child: Container(
                                           width:
@@ -4207,11 +4205,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                           height: MediaQuery.sizeOf(context)
                                                   .height *
                                               0.04,
-                                          constraints: BoxConstraints(
+                                          constraints: const BoxConstraints(
                                             maxWidth: 200.0,
                                             maxHeight: 60.0,
                                           ),
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: ClipRRect(
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
@@ -4227,11 +4225,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                   Expanded(
                                     child: Align(
                                       alignment:
-                                          AlignmentDirectional(1.00, 0.00),
+                                          const AlignmentDirectional(1.00, 0.00),
                                       child: Builder(
                                         builder: (context) => Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 20.0, 20.0, 20.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -4252,13 +4250,13 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                 isGlobal: true,
                                                 avoidOverflow: false,
                                                 targetAnchor:
-                                                    AlignmentDirectional(
+                                                    const AlignmentDirectional(
                                                             0.0, 0.0)
                                                         .resolve(
                                                             Directionality.of(
                                                                 context)),
                                                 followerAnchor:
-                                                    AlignmentDirectional(
+                                                    const AlignmentDirectional(
                                                             0.0, -1.0)
                                                         .resolve(
                                                             Directionality.of(
@@ -4277,7 +4275,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           : FocusScope.of(
                                                                   context)
                                                               .unfocus(),
-                                                      child: MenuBarWidget(),
+                                                      child: const MenuBarWidget(),
                                                     ),
                                                   );
                                                 },
@@ -4294,7 +4292,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                 shape: BoxShape.circle,
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.00, 0.00),
                                                 child: FaIcon(
                                                   FontAwesomeIcons.bars,
@@ -4333,7 +4331,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 26.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -4343,9 +4341,9 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                   Expanded(
                                     child: Align(
                                       alignment:
-                                          AlignmentDirectional(-1.00, 0.00),
+                                          const AlignmentDirectional(-1.00, 0.00),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             20.0, 20.0, 20.0, 20.0),
                                         child: Container(
                                           width:
@@ -4354,11 +4352,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                           height: MediaQuery.sizeOf(context)
                                                   .height *
                                               0.05,
-                                          constraints: BoxConstraints(
+                                          constraints: const BoxConstraints(
                                             maxWidth: 200.0,
                                             maxHeight: 60.0,
                                           ),
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: ClipRRect(
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
@@ -4374,11 +4372,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                   Expanded(
                                     child: Align(
                                       alignment:
-                                          AlignmentDirectional(1.00, 0.00),
+                                          const AlignmentDirectional(1.00, 0.00),
                                       child: Builder(
                                         builder: (context) => Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 20.0, 20.0, 20.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -4399,13 +4397,13 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                 isGlobal: true,
                                                 avoidOverflow: false,
                                                 targetAnchor:
-                                                    AlignmentDirectional(
+                                                    const AlignmentDirectional(
                                                             0.0, 0.0)
                                                         .resolve(
                                                             Directionality.of(
                                                                 context)),
                                                 followerAnchor:
-                                                    AlignmentDirectional(
+                                                    const AlignmentDirectional(
                                                             0.0, -1.0)
                                                         .resolve(
                                                             Directionality.of(
@@ -4424,7 +4422,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                           : FocusScope.of(
                                                                   context)
                                                               .unfocus(),
-                                                      child: MenuBarWidget(),
+                                                      child: const MenuBarWidget(),
                                                     ),
                                                   );
                                                 },
@@ -4441,7 +4439,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                 shape: BoxShape.circle,
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.00, 0.00),
                                                 child: FaIcon(
                                                   FontAwesomeIcons.bars,
@@ -4479,7 +4477,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 20.0, 0.0, 0.0),
                                     child: SingleChildScrollView(
                                       child: Column(
@@ -4487,7 +4485,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 10.0, 10.0, 10.0),
                                             child: SingleChildScrollView(
                                               child: Column(
@@ -4495,11 +4493,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -4525,11 +4523,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
@@ -4555,11 +4553,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
-                                                      'We are the Capstoneers (\"Company,\" \"we,\" \"us,\" \"our\"). We operate the mobile application Kapam-Pamangan (the \"App\"), as well as any other related products and services that refer or link to these legal terms (the \"Legal Terms\") (collectively, the \"Services\"). You can contact us by email at bsit3bcapstone@gmail.com.   \n\nThese Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity (\"you\"), and the Capstoneers, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES, AND YOU MUST DISCONTINUE USE IMMEDIATELY.\n\nWe value transparency and are committed to keeping users informed of significant updates to these Terms of Use. While we will make efforts to notify users of substantial changes, it may not always be feasible to notify all users individually. Therefore, it is essential for users to periodically review these terms to stay informed about any updates.\n\nChanges to these Terms of Use will be effective upon posting on our platform, and it is your responsibility to stay informed about the latest policies and guidelines. Continued use of Kapam-Pamangan constitutes acceptance of the revised terms.\n\nThe Services are intended for users who are at least 18 years old, or for users under the age of 18, parental consent is required to use or register for the Services.',
+                                                      'We are the Capstoneers ("Company," "we," "us," "our"). We operate the mobile application Kapam-Pamangan (the "App"), as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services"). You can contact us by email at bsit3bcapstone@gmail.com.   \n\nThese Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you"), and the Capstoneers, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES, AND YOU MUST DISCONTINUE USE IMMEDIATELY.\n\nWe value transparency and are committed to keeping users informed of significant updates to these Terms of Use. While we will make efforts to notify users of substantial changes, it may not always be feasible to notify all users individually. Therefore, it is essential for users to periodically review these terms to stay informed about any updates.\n\nChanges to these Terms of Use will be effective upon posting on our platform, and it is your responsibility to stay informed about the latest policies and guidelines. Continued use of Kapam-Pamangan constitutes acceptance of the revised terms.\n\nThe Services are intended for users who are at least 18 years old, or for users under the age of 18, parental consent is required to use or register for the Services.',
                                                       textAlign:
                                                           TextAlign.justify,
                                                       style:
@@ -4570,11 +4568,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -4600,7 +4598,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -4615,11 +4613,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -4645,7 +4643,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -4660,11 +4658,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   15.0,
@@ -4690,7 +4688,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -4705,11 +4703,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -4735,7 +4733,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -4750,11 +4748,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -4780,11 +4778,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
@@ -4810,7 +4808,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -4825,11 +4823,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   15.0,
@@ -4855,7 +4853,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -4870,11 +4868,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -4900,11 +4898,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
@@ -4930,7 +4928,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -4945,11 +4943,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   15.0,
@@ -4975,7 +4973,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -4990,11 +4988,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -5020,11 +5018,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
@@ -5050,7 +5048,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -5065,11 +5063,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   15.0,
@@ -5095,7 +5093,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -5110,11 +5108,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -5140,7 +5138,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -5155,11 +5153,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -5185,11 +5183,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
@@ -5215,7 +5213,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -5230,11 +5228,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   15.0,
@@ -5260,7 +5258,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -5275,11 +5273,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -5305,7 +5303,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -5320,11 +5318,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -5350,7 +5348,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -5365,11 +5363,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -5395,11 +5393,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
@@ -5425,11 +5423,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
-                                                      'Kapam-Pamangan is provided on an \"as-is\" basis. The Capstoneers disclaim responsibility for any damages, losses, or inconveniences resulting from the use of the application. While we strive to offer a seamless and enjoyable experience, users are encouraged to use Kapam-Pamangan responsibly and acknowledge the inherent risks of online interaction.',
+                                                      'Kapam-Pamangan is provided on an "as-is" basis. The Capstoneers disclaim responsibility for any damages, losses, or inconveniences resulting from the use of the application. While we strive to offer a seamless and enjoyable experience, users are encouraged to use Kapam-Pamangan responsibly and acknowledge the inherent risks of online interaction.',
                                                       textAlign:
                                                           TextAlign.justify,
                                                       style:
@@ -5440,11 +5438,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   15.0,
@@ -5470,7 +5468,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -5485,11 +5483,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -5515,7 +5513,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -5530,11 +5528,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -5560,7 +5558,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -5575,11 +5573,11 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.00, 0.00),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   25.0,
@@ -5605,7 +5603,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Text(
@@ -5619,7 +5617,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                                     ),
                                                   ),
                                                 ].addToEnd(
-                                                    SizedBox(height: 50.0)),
+                                                    const SizedBox(height: 50.0)),
                                               ),
                                             ),
                                           ),

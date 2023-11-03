@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 
 class FFAppState extends ChangeNotifier {
@@ -24,20 +23,20 @@ class FFAppState extends ChangeNotifier {
 
   String _KPInformation = 'AboutUs';
   String get KPInformation => _KPInformation;
-  set KPInformation(String _value) {
-    _KPInformation = _value;
+  set KPInformation(String value) {
+    _KPInformation = value;
   }
 
   String _MenuBtnColor = 'Home';
   String get MenuBtnColor => _MenuBtnColor;
-  set MenuBtnColor(String _value) {
-    _MenuBtnColor = _value;
+  set MenuBtnColor(String value) {
+    _MenuBtnColor = value;
   }
 
   String _PhoneMenuBar = 'MenuOff';
   String get PhoneMenuBar => _PhoneMenuBar;
-  set PhoneMenuBar(String _value) {
-    _PhoneMenuBar = _value;
+  set PhoneMenuBar(String value) {
+    _PhoneMenuBar = value;
   }
 }
 
