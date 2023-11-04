@@ -6,7 +6,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -28,14 +27,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
   var hasTextTriggered1 = false;
+  var hasContainerTriggered = false;
   var hasTextTriggered2 = false;
   var hasTextTriggered3 = false;
   var hasTextTriggered4 = false;
-  var hasTextTriggered5 = false;
-  var hasContainerTriggered = false;
-  var hasTextTriggered6 = false;
-  var hasTextTriggered7 = false;
-  var hasTextTriggered8 = false;
   final animationsMap = {
     'containerOnPageLoadAnimation': AnimationInfo(
       trigger: AnimationTrigger.onPageLoad,
@@ -53,72 +48,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
       trigger: AnimationTrigger.onActionTrigger,
       applyInitialState: false,
       effects: [
-        FadeEffect(
-          curve: Curves.linear,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-      ],
-    ),
-    'textOnActionTriggerAnimation2': AnimationInfo(
-      trigger: AnimationTrigger.onActionTrigger,
-      applyInitialState: false,
-      effects: [
-        FadeEffect(
-          curve: Curves.linear,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-      ],
-    ),
-    'textOnActionTriggerAnimation3': AnimationInfo(
-      trigger: AnimationTrigger.onActionTrigger,
-      applyInitialState: false,
-      effects: [
-        FadeEffect(
-          curve: Curves.linear,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 600.ms,
-          duration: 600.ms,
-          begin: const Offset(-1000.0, 0.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'textOnActionTriggerAnimation4': AnimationInfo(
-      trigger: AnimationTrigger.onActionTrigger,
-      applyInitialState: false,
-      effects: [
-        FadeEffect(
-          curve: Curves.linear,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-      ],
-    ),
-    'textOnActionTriggerAnimation5': AnimationInfo(
-      trigger: AnimationTrigger.onActionTrigger,
-      applyInitialState: false,
-      effects: [
-        FadeEffect(
-          curve: Curves.linear,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
         MoveEffect(
           curve: Curves.easeInOut,
           delay: 600.ms,
@@ -181,7 +110,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
         ),
       ],
     ),
-    'textOnActionTriggerAnimation6': AnimationInfo(
+    'textOnActionTriggerAnimation2': AnimationInfo(
       trigger: AnimationTrigger.onActionTrigger,
       applyInitialState: false,
       effects: [
@@ -194,7 +123,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
         ),
       ],
     ),
-    'textOnActionTriggerAnimation7': AnimationInfo(
+    'textOnActionTriggerAnimation3': AnimationInfo(
       trigger: AnimationTrigger.onActionTrigger,
       applyInitialState: false,
       effects: [
@@ -207,7 +136,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
         ),
       ],
     ),
-    'textOnActionTriggerAnimation8': AnimationInfo(
+    'textOnActionTriggerAnimation4': AnimationInfo(
       trigger: AnimationTrigger.onActionTrigger,
       applyInitialState: false,
       effects: [
@@ -645,148 +574,330 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         animationsMap['containerOnPageLoadAnimation']!),
                   if (responsiveVisibility(
                     context: context,
+                    phone: false,
                     tablet: false,
                     tabletLandscape: false,
                   ))
-                    MouseRegion(
-                      opaque: false,
-                      cursor: MouseCursor.defer ?? MouseCursor.defer,
-                      onEnter: ((event) async {
-                        setState(() => _model.mouseRegionHovered1 = true);
-                        if (animationsMap['textOnActionTriggerAnimation1'] !=
-                            null) {
-                          setState(() => hasTextTriggered1 = true);
-                          SchedulerBinding.instance.addPostFrameCallback(
-                              (_) async => animationsMap[
-                                      'textOnActionTriggerAnimation1']!
-                                  .controller
-                                  .forward(from: 0.0));
-                        }
-                        if (animationsMap['textOnActionTriggerAnimation2'] !=
-                            null) {
-                          setState(() => hasTextTriggered2 = true);
-                          SchedulerBinding.instance.addPostFrameCallback(
-                              (_) async => animationsMap[
-                                      'textOnActionTriggerAnimation2']!
-                                  .controller
-                                  .forward(from: 0.0));
-                        }
-                        if (animationsMap['textOnActionTriggerAnimation3'] !=
-                            null) {
-                          setState(() => hasTextTriggered3 = true);
-                          SchedulerBinding.instance.addPostFrameCallback(
-                              (_) async => animationsMap[
-                                      'textOnActionTriggerAnimation3']!
-                                  .controller
-                                  .forward(from: 0.0));
-                        }
-                        if (animationsMap['textOnActionTriggerAnimation4'] !=
-                            null) {
-                          setState(() => hasTextTriggered4 = true);
-                          SchedulerBinding.instance.addPostFrameCallback(
-                              (_) async => animationsMap[
-                                      'textOnActionTriggerAnimation4']!
-                                  .controller
-                                  .forward(from: 0.0));
-                        }
-                        if (animationsMap['textOnActionTriggerAnimation5'] !=
-                            null) {
-                          setState(() => hasTextTriggered5 = true);
-                          SchedulerBinding.instance.addPostFrameCallback(
-                              (_) async => animationsMap[
-                                      'textOnActionTriggerAnimation5']!
-                                  .controller
-                                  .forward(from: 0.0));
-                        }
-                      }),
-                      onExit: ((event) async {
-                        setState(() => _model.mouseRegionHovered1 = false);
-                        if (animationsMap['textOnActionTriggerAnimation1'] !=
-                            null) {
-                          animationsMap['textOnActionTriggerAnimation1']!
-                              .controller
-                              .reverse();
-                        }
-                        if (animationsMap['textOnActionTriggerAnimation2'] !=
-                            null) {
-                          animationsMap['textOnActionTriggerAnimation2']!
-                              .controller
-                              .reverse();
-                        }
-                        if (animationsMap['textOnActionTriggerAnimation3'] !=
-                            null) {
-                          animationsMap['textOnActionTriggerAnimation3']!
-                              .controller
-                              .reverse();
-                        }
-                        if (animationsMap['textOnActionTriggerAnimation4'] !=
-                            null) {
-                          animationsMap['textOnActionTriggerAnimation4']!
-                              .controller
-                              .reverse();
-                        }
-                        if (animationsMap['textOnActionTriggerAnimation5'] !=
-                            null) {
-                          animationsMap['textOnActionTriggerAnimation5']!
-                              .controller
-                              .reverse();
-                        }
-                      }),
-                      child: Visibility(
-                        visible: responsiveVisibility(
-                          context: context,
-                          phone: false,
-                          tablet: false,
-                          tabletLandscape: false,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              0.0, 20.0, 0.0, 0.0),
-                          child: InkWell(
-                            splashColor: Colors.transparent,
-                            focusColor: Colors.transparent,
-                            hoverColor: Colors.transparent,
-                            highlightColor: Colors.transparent,
-                            onDoubleTap: () async {
-                              await _model.columnController?.animateTo(
-                                0,
-                                duration: const Duration(milliseconds: 100),
-                                curve: Curves.ease,
-                              );
-                            },
-                            child: Container(
-                              width: MediaQuery.sizeOf(context).width * 1.0,
-                              decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  fit: BoxFit.fill,
-                                  image: Image.asset(
-                                    'assets/images/Website_Home_A.png',
-                                  ).image,
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                      child: InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onDoubleTap: () async {
+                          await _model.columnController?.animateTo(
+                            0,
+                            duration: const Duration(milliseconds: 100),
+                            curve: Curves.ease,
+                          );
+                        },
+                        child: Container(
+                          width: MediaQuery.sizeOf(context).width * 1.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              fit: BoxFit.fill,
+                              image: Image.asset(
+                                'assets/images/Website_Home_A.png',
+                              ).image,
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                100.0, 300.0, 100.0, 300.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  width:
+                                      MediaQuery.sizeOf(context).width * 0.35,
+                                  decoration: const BoxDecoration(),
+                                  alignment: const AlignmentDirectional(-1.00, 0.00),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Align(
+                                        alignment:
+                                            const AlignmentDirectional(0.00, -1.00),
+                                        child: SelectionArea(
+                                            child: Text(
+                                          'Discover',
+                                          textAlign: TextAlign.center,
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryBackground,
+                                                fontSize: () {
+                                                  if ((MediaQuery.sizeOf(context).width >=
+                                                          1280.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1439.0)) {
+                                                    return 25.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1440.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1511.0)) {
+                                                    return 28.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1512.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1535.0)) {
+                                                    return 30.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1536.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1727.0)) {
+                                                    return 32.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1728.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1919.0)) {
+                                                    return 37.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1920.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          2239.0)) {
+                                                    return 40.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          2240.0) &&
+                                                      (MediaQuery.sizeOf(context)
+                                                              .width <=
+                                                          2559.0)) {
+                                                    return 45.0;
+                                                  } else if (MediaQuery.sizeOf(context)
+                                                          .width >=
+                                                      2560.0) {
+                                                    return 55.0;
+                                                  } else {
+                                                    return 30.0;
+                                                  }
+                                                }(),
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                        )),
+                                      ),
+                                      Align(
+                                        alignment:
+                                            const AlignmentDirectional(0.00, -1.00),
+                                        child: SelectionArea(
+                                            child: Text(
+                                          'Kapampangan Cuisine',
+                                          textAlign: TextAlign.center,
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryBackground,
+                                                fontSize: () {
+                                                  if ((MediaQuery.sizeOf(context).width >=
+                                                          1280.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1439.0)) {
+                                                    return 25.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1440.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1511.0)) {
+                                                    return 28.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1512.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1535.0)) {
+                                                    return 30.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1536.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1727.0)) {
+                                                    return 32.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1728.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1919.0)) {
+                                                    return 37.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1920.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          2239.0)) {
+                                                    return 40.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          2240.0) &&
+                                                      (MediaQuery.sizeOf(context)
+                                                              .width <=
+                                                          2559.0)) {
+                                                    return 45.0;
+                                                  } else if (MediaQuery.sizeOf(context)
+                                                          .width >=
+                                                      2560.0) {
+                                                    return 55.0;
+                                                  } else {
+                                                    return 30.0;
+                                                  }
+                                                }(),
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                        )),
+                                      ),
+                                      Align(
+                                        alignment:
+                                            const AlignmentDirectional(0.00, -1.00),
+                                        child: Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  10.0, 10.0, 10.0, 10.0),
+                                          child: SelectionArea(
+                                              child: Text(
+                                            'Embark on a delightful journey through the world of Kapampangan cuisine with the Kapam-Pamangan app. Access a wide range of over 150+ Kapampangan recipes, from mouthwatering main dishes to savory soups and delightful desserts. Find your favorites and start a culinary adventure today!',
+                                            textAlign: TextAlign.justify,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryBackground,
+                                                  fontSize: () {
+                                                    if ((MediaQuery.sizeOf(context).width >=
+                                                            1280.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1439.0)) {
+                                                      return 16.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1440.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1511.0)) {
+                                                      return 18.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1512.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1535.0)) {
+                                                      return 20.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1536.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1727.0)) {
+                                                      return 22.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1728.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1919.0)) {
+                                                      return 27.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1920.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            2239.0)) {
+                                                      return 30.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            2240.0) &&
+                                                        (MediaQuery.sizeOf(context)
+                                                                .width <=
+                                                            2559.0)) {
+                                                      return 35.0;
+                                                    } else if (MediaQuery.sizeOf(context)
+                                                            .width >=
+                                                        2560.0) {
+                                                      return 45.0;
+                                                    } else {
+                                                      return 20.0;
+                                                    }
+                                                  }(),
+                                                  fontWeight: FontWeight.normal,
+                                                ),
+                                          )),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    100.0, 300.0, 100.0, 300.0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.sizeOf(context).width *
-                                          0.35,
-                                      decoration: const BoxDecoration(),
-                                      alignment:
-                                          const AlignmentDirectional(-1.00, 0.00),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          Align(
-                                            alignment: const AlignmentDirectional(
-                                                0.00, -1.00),
+                                Align(
+                                  alignment: const AlignmentDirectional(1.00, 0.00),
+                                  child: Container(
+                                    width:
+                                        MediaQuery.sizeOf(context).width * 0.35,
+                                    decoration: const BoxDecoration(),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              const AlignmentDirectional(0.00, -1.00),
+                                          child: SelectionArea(
+                                              child: Text(
+                                            'App Features',
+                                            textAlign: TextAlign.center,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBackground,
+                                                  fontSize: () {
+                                                    if ((MediaQuery.sizeOf(context).width >=
+                                                            1280.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1439.0)) {
+                                                      return 25.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1440.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1511.0)) {
+                                                      return 28.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1512.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1535.0)) {
+                                                      return 30.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1536.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1727.0)) {
+                                                      return 32.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1728.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1919.0)) {
+                                                      return 37.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1920.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            2239.0)) {
+                                                      return 40.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            2240.0) &&
+                                                        (MediaQuery.sizeOf(context)
+                                                                .width <=
+                                                            2559.0)) {
+                                                      return 45.0;
+                                                    } else if (MediaQuery.sizeOf(context)
+                                                            .width >=
+                                                        2560.0) {
+                                                      return 55.0;
+                                                    } else {
+                                                      return 30.0;
+                                                    }
+                                                  }(),
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                          )),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              const AlignmentDirectional(0.00, -1.00),
+                                          child: Padding(
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    10.0, 10.0, 10.0, 10.0),
                                             child: SelectionArea(
                                                 child: Text(
-                                              'Discover',
-                                              textAlign: TextAlign.center,
+                                              'Explore Kapampangan cuisine like never before with the Kapam-Pamangan app, packed with a diverse range of features to enhance your culinary experience. From searching for numerous Kapampangan recipes to generating recommended dishes based on available ingredients, our app is your indispensable kitchen companion. Dive into the world of Kapampangan cooking with step-by-step cooking instructions, meal planning tools, and more!',
+                                              textAlign: TextAlign.justify,
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyMedium
@@ -800,47 +911,48 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               1280.0) &&
                                                           (MediaQuery.sizeOf(context).width <=
                                                               1439.0)) {
-                                                        return 25.0;
+                                                        return 16.0;
                                                       } else if ((MediaQuery.sizeOf(context).width >=
                                                               1440.0) &&
                                                           (MediaQuery.sizeOf(context).width <=
                                                               1511.0)) {
-                                                        return 28.0;
+                                                        return 18.0;
                                                       } else if ((MediaQuery.sizeOf(context).width >=
                                                               1512.0) &&
                                                           (MediaQuery.sizeOf(context).width <=
                                                               1535.0)) {
-                                                        return 30.0;
+                                                        return 20.0;
                                                       } else if ((MediaQuery.sizeOf(context).width >=
                                                               1536.0) &&
                                                           (MediaQuery.sizeOf(context).width <=
                                                               1727.0)) {
-                                                        return 32.0;
+                                                        return 22.0;
                                                       } else if ((MediaQuery.sizeOf(context).width >=
                                                               1728.0) &&
                                                           (MediaQuery.sizeOf(context).width <=
                                                               1919.0)) {
-                                                        return 37.0;
+                                                        return 27.0;
                                                       } else if ((MediaQuery.sizeOf(context).width >=
                                                               1920.0) &&
                                                           (MediaQuery.sizeOf(context).width <=
                                                               2239.0)) {
-                                                        return 40.0;
+                                                        return 30.0;
                                                       } else if ((MediaQuery.sizeOf(context).width >=
                                                               2240.0) &&
                                                           (MediaQuery.sizeOf(context)
                                                                   .width <=
                                                               2559.0)) {
-                                                        return 45.0;
+                                                        return 35.0;
                                                       } else if (MediaQuery.sizeOf(context)
                                                               .width >=
                                                           2560.0) {
-                                                        return 55.0;
+                                                        return 45.0;
                                                       } else {
-                                                        return 30.0;
+                                                        return 20.0;
                                                       }
                                                     }(),
-                                                    fontWeight: FontWeight.bold,
+                                                    fontWeight:
+                                                        FontWeight.normal,
                                                   ),
                                             )).animateOnActionTrigger(
                                                 animationsMap[
@@ -848,314 +960,12 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 hasBeenTriggered:
                                                     hasTextTriggered1),
                                           ),
-                                          Align(
-                                            alignment: const AlignmentDirectional(
-                                                0.00, -1.00),
-                                            child: SelectionArea(
-                                                child: Text(
-                                              'Kapampangan Cuisine',
-                                              textAlign: TextAlign.center,
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .bodyMedium
-                                                  .override(
-                                                    fontFamily: 'Poppins',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryBackground,
-                                                    fontSize: () {
-                                                      if ((MediaQuery.sizeOf(context).width >=
-                                                              1280.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1439.0)) {
-                                                        return 25.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1440.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1511.0)) {
-                                                        return 28.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1512.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1535.0)) {
-                                                        return 30.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1536.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1727.0)) {
-                                                        return 32.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1728.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1919.0)) {
-                                                        return 37.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1920.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              2239.0)) {
-                                                        return 40.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              2240.0) &&
-                                                          (MediaQuery.sizeOf(context)
-                                                                  .width <=
-                                                              2559.0)) {
-                                                        return 45.0;
-                                                      } else if (MediaQuery.sizeOf(context)
-                                                              .width >=
-                                                          2560.0) {
-                                                        return 55.0;
-                                                      } else {
-                                                        return 30.0;
-                                                      }
-                                                    }(),
-                                                    fontWeight: FontWeight.bold,
-                                                  ),
-                                            )).animateOnActionTrigger(
-                                                animationsMap[
-                                                    'textOnActionTriggerAnimation2']!,
-                                                hasBeenTriggered:
-                                                    hasTextTriggered2),
-                                          ),
-                                          Align(
-                                            alignment: const AlignmentDirectional(
-                                                0.00, -1.00),
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      10.0, 10.0, 10.0, 10.0),
-                                              child: SelectionArea(
-                                                  child: Text(
-                                                'Embark on a delightful journey through the world of Kapampangan cuisine with the Kapam-Pamangan app. Access a wide range of over 150+ Kapampangan recipes, from mouthwatering main dishes to savory soups and delightful desserts. Find your favorites and start a culinary adventure today!',
-                                                textAlign: TextAlign.justify,
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Poppins',
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .secondaryBackground,
-                                                      fontSize: () {
-                                                        if ((MediaQuery.sizeOf(context).width >=
-                                                                1280.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1439.0)) {
-                                                          return 16.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1440.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1511.0)) {
-                                                          return 18.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1512.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1535.0)) {
-                                                          return 20.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1536.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1727.0)) {
-                                                          return 22.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1728.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1919.0)) {
-                                                          return 27.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1920.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                2239.0)) {
-                                                          return 30.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                2240.0) &&
-                                                            (MediaQuery.sizeOf(context)
-                                                                    .width <=
-                                                                2559.0)) {
-                                                          return 35.0;
-                                                        } else if (MediaQuery.sizeOf(context)
-                                                                .width >=
-                                                            2560.0) {
-                                                          return 45.0;
-                                                        } else {
-                                                          return 20.0;
-                                                        }
-                                                      }(),
-                                                      fontWeight:
-                                                          FontWeight.normal,
-                                                    ),
-                                              )).animateOnActionTrigger(
-                                                  animationsMap[
-                                                      'textOnActionTriggerAnimation3']!,
-                                                  hasBeenTriggered:
-                                                      hasTextTriggered3),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    Align(
-                                      alignment:
-                                          const AlignmentDirectional(1.00, 0.00),
-                                      child: Container(
-                                        width:
-                                            MediaQuery.sizeOf(context).width *
-                                                0.35,
-                                        decoration: const BoxDecoration(),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Align(
-                                              alignment: const AlignmentDirectional(
-                                                  0.00, -1.00),
-                                              child: SelectionArea(
-                                                  child: Text(
-                                                'App Features',
-                                                textAlign: TextAlign.center,
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Poppins',
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .primaryBackground,
-                                                      fontSize: () {
-                                                        if ((MediaQuery.sizeOf(context).width >=
-                                                                1280.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1439.0)) {
-                                                          return 25.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1440.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1511.0)) {
-                                                          return 28.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1512.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1535.0)) {
-                                                          return 30.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1536.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1727.0)) {
-                                                          return 32.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1728.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1919.0)) {
-                                                          return 37.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1920.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                2239.0)) {
-                                                          return 40.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                2240.0) &&
-                                                            (MediaQuery.sizeOf(context)
-                                                                    .width <=
-                                                                2559.0)) {
-                                                          return 45.0;
-                                                        } else if (MediaQuery.sizeOf(context)
-                                                                .width >=
-                                                            2560.0) {
-                                                          return 55.0;
-                                                        } else {
-                                                          return 30.0;
-                                                        }
-                                                      }(),
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                    ),
-                                              )).animateOnActionTrigger(
-                                                  animationsMap[
-                                                      'textOnActionTriggerAnimation4']!,
-                                                  hasBeenTriggered:
-                                                      hasTextTriggered4),
-                                            ),
-                                            Align(
-                                              alignment: const AlignmentDirectional(
-                                                  0.00, -1.00),
-                                              child: Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        10.0, 10.0, 10.0, 10.0),
-                                                child: SelectionArea(
-                                                    child: Text(
-                                                  'Explore Kapampangan cuisine like never before with the Kapam-Pamangan app, packed with a diverse range of features to enhance your culinary experience. From searching for numerous Kapampangan recipes to generating recommended dishes based on available ingredients, our app is your indispensable kitchen companion. Dive into the world of Kapampangan cooking with step-by-step cooking instructions, meal planning tools, and more!',
-                                                  textAlign: TextAlign.justify,
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .primaryBackground,
-                                                        fontSize: () {
-                                                          if ((MediaQuery.sizeOf(context).width >=
-                                                                  1280.0) &&
-                                                              (MediaQuery.sizeOf(context).width <=
-                                                                  1439.0)) {
-                                                            return 16.0;
-                                                          } else if ((MediaQuery.sizeOf(context).width >=
-                                                                  1440.0) &&
-                                                              (MediaQuery.sizeOf(context).width <=
-                                                                  1511.0)) {
-                                                            return 18.0;
-                                                          } else if ((MediaQuery.sizeOf(context).width >=
-                                                                  1512.0) &&
-                                                              (MediaQuery.sizeOf(context).width <=
-                                                                  1535.0)) {
-                                                            return 20.0;
-                                                          } else if ((MediaQuery.sizeOf(context).width >=
-                                                                  1536.0) &&
-                                                              (MediaQuery.sizeOf(context).width <=
-                                                                  1727.0)) {
-                                                            return 22.0;
-                                                          } else if ((MediaQuery.sizeOf(context).width >=
-                                                                  1728.0) &&
-                                                              (MediaQuery.sizeOf(context).width <=
-                                                                  1919.0)) {
-                                                            return 27.0;
-                                                          } else if ((MediaQuery.sizeOf(context).width >=
-                                                                  1920.0) &&
-                                                              (MediaQuery.sizeOf(context)
-                                                                      .width <=
-                                                                  2239.0)) {
-                                                            return 30.0;
-                                                          } else if ((MediaQuery.sizeOf(context)
-                                                                      .width >=
-                                                                  2240.0) &&
-                                                              (MediaQuery.sizeOf(context)
-                                                                      .width <=
-                                                                  2559.0)) {
-                                                            return 35.0;
-                                                          } else if (MediaQuery.sizeOf(context)
-                                                                  .width >=
-                                                              2560.0) {
-                                                            return 45.0;
-                                                          } else {
-                                                            return 20.0;
-                                                          }
-                                                        }(),
-                                                        fontWeight:
-                                                            FontWeight.normal,
-                                                      ),
-                                                )).animateOnActionTrigger(
-                                                    animationsMap[
-                                                        'textOnActionTriggerAnimation5']!,
-                                                    hasBeenTriggered:
-                                                        hasTextTriggered5),
-                                              ),
-                                            ),
-                                          ],
                                         ),
-                                      ),
+                                      ],
                                     ),
-                                  ].divide(const SizedBox(height: 400.0)),
+                                  ),
                                 ),
-                              ),
+                              ].divide(const SizedBox(height: 400.0)),
                             ),
                           ),
                         ),
@@ -1167,626 +977,510 @@ class _HomePageWidgetState extends State<HomePageWidget>
                     tablet: false,
                     tabletLandscape: false,
                   ))
-                    MouseRegion(
-                      opaque: false,
-                      cursor: MouseCursor.defer ?? MouseCursor.defer,
-                      onEnter: ((event) async {
-                        setState(() => _model.mouseRegionHovered2 = true);
-                        if (animationsMap[
-                                'containerOnActionTriggerAnimation'] !=
-                            null) {
-                          setState(() => hasContainerTriggered = true);
-                          SchedulerBinding.instance.addPostFrameCallback(
-                              (_) async => await animationsMap[
-                                      'containerOnActionTriggerAnimation']!
-                                  .controller
-                                  .forward(from: 0.0));
-                        }
-                      }),
-                      onExit: ((event) async {
-                        setState(() => _model.mouseRegionHovered2 = false);
-                        if (animationsMap[
-                                'containerOnActionTriggerAnimation'] !=
-                            null) {
-                          animationsMap['containerOnActionTriggerAnimation']!
-                              .controller
-                              .reverse();
-                        }
-                      }),
-                      child: Visibility(
-                        visible: responsiveVisibility(
-                          context: context,
-                          phone: false,
-                          tablet: false,
-                          tabletLandscape: false,
+                    Container(
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: Image.asset(
+                            'assets/images/Website_Home_B2.png',
+                          ).image,
                         ),
-                        child: Container(
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            image: DecorationImage(
-                              fit: BoxFit.fill,
-                              image: Image.asset(
-                                'assets/images/Website_Home_B2.png',
-                              ).image,
-                            ),
-                          ),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    180.0, 250.0, 180.0, 250.0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.sizeOf(context).width *
-                                          0.35,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryBackground,
-                                      ),
-                                      alignment:
-                                          const AlignmentDirectional(-1.00, 0.00),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Align(
-                                            alignment: const AlignmentDirectional(
-                                                0.00, -1.00),
-                                            child: SelectionArea(
-                                                child: Text(
-                                              'Explore Kapampangan\nCuisine. Download',
-                                              textAlign: TextAlign.center,
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .bodyMedium
-                                                  .override(
-                                                    fontFamily: 'Poppins',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    fontSize: () {
-                                                      if ((MediaQuery.sizeOf(context).width >=
-                                                              1280.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1439.0)) {
-                                                        return 30.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1440.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1511.0)) {
-                                                        return 30.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1512.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1535.0)) {
-                                                        return 33.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1536.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1727.0)) {
-                                                        return 35.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1728.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1919.0)) {
-                                                        return 38.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1920.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              2239.0)) {
-                                                        return 50.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              2240.0) &&
-                                                          (MediaQuery.sizeOf(context)
-                                                                  .width <=
-                                                              2559.0)) {
-                                                        return 55.0;
-                                                      } else if (MediaQuery.sizeOf(context)
-                                                              .width >=
-                                                          2560.0) {
-                                                        return 55.0;
-                                                      } else {
-                                                        return 30.0;
-                                                      }
-                                                    }(),
-                                                    fontWeight: FontWeight.bold,
-                                                  ),
-                                            )),
-                                          ),
-                                          Align(
-                                            alignment: const AlignmentDirectional(
-                                                0.00, 0.00),
-                                            child: RichText(
-                                              textScaleFactor:
-                                                  MediaQuery.of(context)
-                                                      .textScaleFactor,
-                                              text: TextSpan(
-                                                children: [
-                                                  TextSpan(
-                                                    text: 'Kapam-Pamangan ',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primary,
-                                                          fontSize: () {
-                                                            if ((MediaQuery.sizeOf(context).width >=
-                                                                    1280.0) &&
-                                                                (MediaQuery.sizeOf(context).width <=
-                                                                    1439.0)) {
-                                                              return 30.0;
-                                                            } else if ((MediaQuery.sizeOf(context).width >=
-                                                                    1440.0) &&
-                                                                (MediaQuery.sizeOf(context).width <=
-                                                                    1511.0)) {
-                                                              return 30.0;
-                                                            } else if ((MediaQuery.sizeOf(context).width >=
-                                                                    1512.0) &&
-                                                                (MediaQuery.sizeOf(context).width <=
-                                                                    1535.0)) {
-                                                              return 33.0;
-                                                            } else if ((MediaQuery.sizeOf(context).width >=
-                                                                    1536.0) &&
-                                                                (MediaQuery.sizeOf(context).width <=
-                                                                    1727.0)) {
-                                                              return 35.0;
-                                                            } else if ((MediaQuery.sizeOf(context).width >=
-                                                                    1728.0) &&
-                                                                (MediaQuery.sizeOf(context).width <=
-                                                                    1919.0)) {
-                                                              return 38.0;
-                                                            } else if ((MediaQuery.sizeOf(context).width >=
-                                                                    1920.0) &&
-                                                                (MediaQuery.sizeOf(context)
-                                                                        .width <=
-                                                                    2239.0)) {
-                                                              return 50.0;
-                                                            } else if ((MediaQuery.sizeOf(context)
-                                                                        .width >=
-                                                                    2240.0) &&
-                                                                (MediaQuery.sizeOf(context)
-                                                                        .width <=
-                                                                    2559.0)) {
-                                                              return 55.0;
-                                                            } else if (MediaQuery.sizeOf(context)
-                                                                    .width >=
-                                                                2560.0) {
-                                                              return 55.0;
-                                                            } else {
-                                                              return 30.0;
-                                                            }
-                                                          }(),
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
-                                                  ),
-                                                  TextSpan(
-                                                    text: 'now!',
-                                                    style: GoogleFonts.getFont(
-                                                      'Poppins',
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      fontSize: () {
-                                                        if ((MediaQuery.sizeOf(context).width >=
-                                                                1280.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1439.0)) {
-                                                          return 30.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1440.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1511.0)) {
-                                                          return 30.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1512.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1535.0)) {
-                                                          return 33.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1536.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1727.0)) {
-                                                          return 35.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1728.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1919.0)) {
-                                                          return 38.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1920.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                2239.0)) {
-                                                          return 50.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                2240.0) &&
-                                                            (MediaQuery.sizeOf(context)
-                                                                    .width <=
-                                                                2559.0)) {
-                                                          return 55.0;
-                                                        } else if (MediaQuery.sizeOf(context)
-                                                                .width >=
-                                                            2560.0) {
-                                                          return 55.0;
-                                                        } else {
-                                                          return 30.0;
-                                                        }
-                                                      }(),
-                                                    ),
-                                                  )
-                                                ],
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Poppins',
-                                                      fontSize: () {
-                                                        if ((MediaQuery.sizeOf(context).width >=
-                                                                1280.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1439.0)) {
-                                                          return 30.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1440.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1511.0)) {
-                                                          return 30.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1512.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1535.0)) {
-                                                          return 33.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1536.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1727.0)) {
-                                                          return 35.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1728.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                1919.0)) {
-                                                          return 38.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                1920.0) &&
-                                                            (MediaQuery.sizeOf(context).width <=
-                                                                2239.0)) {
-                                                          return 50.0;
-                                                        } else if ((MediaQuery.sizeOf(context).width >=
-                                                                2240.0) &&
-                                                            (MediaQuery.sizeOf(context)
-                                                                    .width <=
-                                                                2559.0)) {
-                                                          return 55.0;
-                                                        } else if (MediaQuery.sizeOf(context)
-                                                                .width >=
-                                                            2560.0) {
-                                                          return 55.0;
-                                                        } else {
-                                                          return 30.0;
-                                                        }
-                                                      }(),
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                    ),
-                                              ),
-                                              textAlign: TextAlign.center,
-                                            ).animateOnPageLoad(animationsMap[
-                                                'richTextOnPageLoadAnimation1']!),
-                                          ),
-                                          Align(
-                                            alignment: const AlignmentDirectional(
-                                                0.00, 0.00),
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 10.0, 0.0, 10.0),
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryBackground,
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          20.0),
-                                                ),
-                                                child: ClipRRect(
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          8.0),
-                                                  child: Image.asset(
-                                                    'assets/images/GoogleBadge.png',
-                                                    fit: BoxFit.cover,
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ).animateOnActionTrigger(
-                                        animationsMap[
-                                            'containerOnActionTriggerAnimation']!,
-                                        hasBeenTriggered:
-                                            hasContainerTriggered),
-                                  ],
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    57.0, 31.0, 30.0, 31.0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    InkWell(
-                                      splashColor: Colors.transparent,
-                                      focusColor: Colors.transparent,
-                                      hoverColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
-                                        context.pushNamed(
-                                          'AboutPage',
-                                          extra: <String, dynamic>{
-                                            kTransitionInfoKey: const TransitionInfo(
-                                              hasTransition: true,
-                                              transitionType:
-                                                  PageTransitionType.fade,
-                                              duration:
-                                                  Duration(milliseconds: 0),
-                                            ),
-                                          },
-                                        );
-
-                                        setState(() {
-                                          FFAppState().KPInformation =
-                                              'AboutUs';
-                                          FFAppState().MenuBtnColor = 'About';
-                                        });
-                                      },
-                                      child: Text(
-                                        'About',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Poppins',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
-                                              fontSize: () {
-                                                if ((MediaQuery.sizeOf(context).width >=
-                                                        1280.0) &&
-                                                    (MediaQuery.sizeOf(context).width <=
-                                                        1439.0)) {
-                                                  return 14.0;
-                                                } else if ((MediaQuery.sizeOf(context).width >=
-                                                        1440.0) &&
-                                                    (MediaQuery.sizeOf(context).width <=
-                                                        1511.0)) {
-                                                  return 15.0;
-                                                } else if ((MediaQuery.sizeOf(context).width >=
-                                                        1512.0) &&
-                                                    (MediaQuery.sizeOf(context).width <=
-                                                        1535.0)) {
-                                                  return 16.0;
-                                                } else if ((MediaQuery.sizeOf(context).width >=
-                                                        1536.0) &&
-                                                    (MediaQuery.sizeOf(context).width <=
-                                                        1727.0)) {
-                                                  return 16.0;
-                                                } else if ((MediaQuery.sizeOf(context).width >=
-                                                        1728.0) &&
-                                                    (MediaQuery.sizeOf(context).width <=
-                                                        1919.0)) {
-                                                  return 18.0;
-                                                } else if ((MediaQuery.sizeOf(context).width >=
-                                                        1920.0) &&
-                                                    (MediaQuery.sizeOf(context).width <=
-                                                        2239.0)) {
-                                                  return 20.0;
-                                                } else if ((MediaQuery.sizeOf(context).width >=
-                                                        2240.0) &&
-                                                    (MediaQuery.sizeOf(context).width <=
-                                                        2559.0)) {
-                                                  return 22.0;
-                                                } else if (MediaQuery.sizeOf(context).width >=
-                                                    2560.0) {
-                                                  return 22.0;
-                                                } else {
-                                                  return 18.0;
-                                                }
-                                              }(),
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                      ),
-                                    ),
-                                    InkWell(
-                                      splashColor: Colors.transparent,
-                                      focusColor: Colors.transparent,
-                                      hoverColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
-                                        context.pushNamed(
-                                          'TermsOfUse',
-                                          extra: <String, dynamic>{
-                                            kTransitionInfoKey: const TransitionInfo(
-                                              hasTransition: true,
-                                              transitionType:
-                                                  PageTransitionType.fade,
-                                              duration:
-                                                  Duration(milliseconds: 0),
-                                            ),
-                                          },
-                                        );
-
-                                        setState(() {
-                                          FFAppState().MenuBtnColor = 'About';
-                                        });
-                                      },
-                                      child: Text(
-                                        'Terms of Use',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Poppins',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
-                                              fontSize: () {
-                                                if ((MediaQuery.sizeOf(context).width >=
-                                                        1280.0) &&
-                                                    (MediaQuery.sizeOf(context).width <=
-                                                        1439.0)) {
-                                                  return 14.0;
-                                                } else if ((MediaQuery.sizeOf(context).width >=
-                                                        1440.0) &&
-                                                    (MediaQuery.sizeOf(context).width <=
-                                                        1511.0)) {
-                                                  return 15.0;
-                                                } else if ((MediaQuery.sizeOf(context).width >=
-                                                        1512.0) &&
-                                                    (MediaQuery.sizeOf(context).width <=
-                                                        1535.0)) {
-                                                  return 16.0;
-                                                } else if ((MediaQuery.sizeOf(context).width >=
-                                                        1536.0) &&
-                                                    (MediaQuery.sizeOf(context).width <=
-                                                        1727.0)) {
-                                                  return 16.0;
-                                                } else if ((MediaQuery.sizeOf(context).width >=
-                                                        1728.0) &&
-                                                    (MediaQuery.sizeOf(context).width <=
-                                                        1919.0)) {
-                                                  return 18.0;
-                                                } else if ((MediaQuery.sizeOf(context).width >=
-                                                        1920.0) &&
-                                                    (MediaQuery.sizeOf(context).width <=
-                                                        2239.0)) {
-                                                  return 20.0;
-                                                } else if ((MediaQuery.sizeOf(context).width >=
-                                                        2240.0) &&
-                                                    (MediaQuery.sizeOf(context).width <=
-                                                        2559.0)) {
-                                                  return 22.0;
-                                                } else if (MediaQuery.sizeOf(context).width >=
-                                                    2560.0) {
-                                                  return 22.0;
-                                                } else {
-                                                  return 18.0;
-                                                }
-                                              }(),
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                      ),
-                                    ),
-                                    Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [
-                                        Expanded(
-                                          child: InkWell(
-                                            splashColor: Colors.transparent,
-                                            focusColor: Colors.transparent,
-                                            hoverColor: Colors.transparent,
-                                            highlightColor: Colors.transparent,
-                                            onTap: () async {
-                                              context.pushNamed(
-                                                'PrivacyPolicy',
-                                                extra: <String, dynamic>{
-                                                  kTransitionInfoKey:
-                                                      const TransitionInfo(
-                                                    hasTransition: true,
-                                                    transitionType:
-                                                        PageTransitionType.fade,
-                                                    duration: Duration(
-                                                        milliseconds: 0),
-                                                  ),
-                                                },
-                                              );
-
-                                              setState(() {
-                                                FFAppState().MenuBtnColor =
-                                                    'About';
-                                              });
-                                            },
+                      ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                180.0, 250.0, 180.0, 250.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  width:
+                                      MediaQuery.sizeOf(context).width * 0.35,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryBackground,
+                                  ),
+                                  alignment: const AlignmentDirectional(-1.00, 0.00),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Align(
+                                        alignment:
+                                            const AlignmentDirectional(0.00, -1.00),
+                                        child: SelectionArea(
                                             child: Text(
-                                              'Privacy Policy',
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .bodyMedium
-                                                  .override(
-                                                    fontFamily: 'Poppins',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryBackground,
-                                                    fontSize: () {
-                                                      if ((MediaQuery.sizeOf(context).width >=
-                                                              1280.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1439.0)) {
-                                                        return 14.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1440.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1511.0)) {
-                                                        return 15.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1512.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1535.0)) {
-                                                        return 16.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1536.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1727.0)) {
-                                                        return 16.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1728.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              1919.0)) {
-                                                        return 18.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              1920.0) &&
-                                                          (MediaQuery.sizeOf(context).width <=
-                                                              2239.0)) {
-                                                        return 20.0;
-                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                              2240.0) &&
-                                                          (MediaQuery.sizeOf(context)
-                                                                  .width <=
-                                                              2559.0)) {
-                                                        return 22.0;
-                                                      } else if (MediaQuery.sizeOf(context)
-                                                              .width >=
-                                                          2560.0) {
-                                                        return 22.0;
-                                                      } else {
-                                                        return 18.0;
-                                                      }
-                                                    }(),
-                                                    fontWeight: FontWeight.bold,
-                                                  ),
-                                            ),
-                                          ),
-                                        ),
-                                        SelectionArea(
-                                            child: Text(
-                                          '© 2023 Capstoneers, All Rights Reserved.',
+                                          'Explore Kapampangan\nCuisine. Download',
+                                          textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Poppins',
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
+                                                        .primaryText,
+                                                fontSize: () {
+                                                  if ((MediaQuery.sizeOf(context).width >=
+                                                          1280.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1439.0)) {
+                                                    return 30.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1440.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1511.0)) {
+                                                    return 30.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1512.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1535.0)) {
+                                                    return 33.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1536.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1727.0)) {
+                                                    return 35.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1728.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          1919.0)) {
+                                                    return 38.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          1920.0) &&
+                                                      (MediaQuery.sizeOf(context).width <=
+                                                          2239.0)) {
+                                                    return 50.0;
+                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                          2240.0) &&
+                                                      (MediaQuery.sizeOf(context)
+                                                              .width <=
+                                                          2559.0)) {
+                                                    return 55.0;
+                                                  } else if (MediaQuery.sizeOf(context)
+                                                          .width >=
+                                                      2560.0) {
+                                                    return 55.0;
+                                                  } else {
+                                                    return 30.0;
+                                                  }
+                                                }(),
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                        )),
+                                      ),
+                                      Align(
+                                        alignment:
+                                            const AlignmentDirectional(0.00, 0.00),
+                                        child: RichText(
+                                          textScaleFactor:
+                                              MediaQuery.of(context)
+                                                  .textScaleFactor,
+                                          text: TextSpan(
+                                            children: [
+                                              TextSpan(
+                                                text: 'Kapam-Pamangan ',
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      fontFamily: 'Poppins',
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primary,
+                                                      fontSize: () {
+                                                        if ((MediaQuery.sizeOf(context).width >=
+                                                                1280.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1439.0)) {
+                                                          return 30.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1440.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1511.0)) {
+                                                          return 30.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1512.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1535.0)) {
+                                                          return 33.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1536.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1727.0)) {
+                                                          return 35.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1728.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                1919.0)) {
+                                                          return 38.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                1920.0) &&
+                                                            (MediaQuery.sizeOf(context).width <=
+                                                                2239.0)) {
+                                                          return 50.0;
+                                                        } else if ((MediaQuery.sizeOf(context).width >=
+                                                                2240.0) &&
+                                                            (MediaQuery.sizeOf(context)
+                                                                    .width <=
+                                                                2559.0)) {
+                                                          return 55.0;
+                                                        } else if (MediaQuery.sizeOf(context)
+                                                                .width >=
+                                                            2560.0) {
+                                                          return 55.0;
+                                                        } else {
+                                                          return 30.0;
+                                                        }
+                                                      }(),
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                    ),
+                                              ),
+                                              TextSpan(
+                                                text: 'now!',
+                                                style: GoogleFonts.getFont(
+                                                  'Poppins',
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: () {
+                                                    if ((MediaQuery.sizeOf(context).width >=
+                                                            1280.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1439.0)) {
+                                                      return 30.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1440.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1511.0)) {
+                                                      return 30.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1512.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1535.0)) {
+                                                      return 33.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1536.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1727.0)) {
+                                                      return 35.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1728.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1919.0)) {
+                                                      return 38.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1920.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            2239.0)) {
+                                                      return 50.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            2240.0) &&
+                                                        (MediaQuery.sizeOf(context)
+                                                                .width <=
+                                                            2559.0)) {
+                                                      return 55.0;
+                                                    } else if (MediaQuery.sizeOf(context)
+                                                            .width >=
+                                                        2560.0) {
+                                                      return 55.0;
+                                                    } else {
+                                                      return 30.0;
+                                                    }
+                                                  }(),
+                                                ),
+                                              )
+                                            ],
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  fontSize: () {
+                                                    if ((MediaQuery.sizeOf(context).width >=
+                                                            1280.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1439.0)) {
+                                                      return 30.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1440.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1511.0)) {
+                                                      return 30.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1512.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1535.0)) {
+                                                      return 33.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1536.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1727.0)) {
+                                                      return 35.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1728.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            1919.0)) {
+                                                      return 38.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            1920.0) &&
+                                                        (MediaQuery.sizeOf(context).width <=
+                                                            2239.0)) {
+                                                      return 50.0;
+                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                            2240.0) &&
+                                                        (MediaQuery.sizeOf(context)
+                                                                .width <=
+                                                            2559.0)) {
+                                                      return 55.0;
+                                                    } else if (MediaQuery.sizeOf(context)
+                                                            .width >=
+                                                        2560.0) {
+                                                      return 55.0;
+                                                    } else {
+                                                      return 30.0;
+                                                    }
+                                                  }(),
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                          ),
+                                          textAlign: TextAlign.center,
+                                        ).animateOnPageLoad(animationsMap[
+                                            'richTextOnPageLoadAnimation1']!),
+                                      ),
+                                      Align(
+                                        alignment:
+                                            const AlignmentDirectional(0.00, 0.00),
+                                        child: Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 10.0, 0.0, 10.0),
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                              borderRadius:
+                                                  BorderRadius.circular(20.0),
+                                            ),
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/GoogleBadge.png',
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ).animateOnActionTrigger(
+                                    animationsMap[
+                                        'containerOnActionTriggerAnimation']!,
+                                    hasBeenTriggered: hasContainerTriggered),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                57.0, 31.0, 30.0, 31.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    context.pushNamed(
+                                      'AboutPage',
+                                      extra: <String, dynamic>{
+                                        kTransitionInfoKey: const TransitionInfo(
+                                          hasTransition: true,
+                                          transitionType:
+                                              PageTransitionType.fade,
+                                          duration: Duration(milliseconds: 0),
+                                        ),
+                                      },
+                                    );
+
+                                    setState(() {
+                                      FFAppState().KPInformation = 'AboutUs';
+                                      FFAppState().MenuBtnColor = 'About';
+                                    });
+                                  },
+                                  child: Text(
+                                    'About',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Poppins',
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryBackground,
+                                          fontSize: () {
+                                            if ((MediaQuery.sizeOf(context).width >=
+                                                    1280.0) &&
+                                                (MediaQuery.sizeOf(context).width <=
+                                                    1439.0)) {
+                                              return 14.0;
+                                            } else if ((MediaQuery.sizeOf(context).width >=
+                                                    1440.0) &&
+                                                (MediaQuery.sizeOf(context).width <=
+                                                    1511.0)) {
+                                              return 15.0;
+                                            } else if ((MediaQuery.sizeOf(context).width >=
+                                                    1512.0) &&
+                                                (MediaQuery.sizeOf(context).width <=
+                                                    1535.0)) {
+                                              return 16.0;
+                                            } else if ((MediaQuery.sizeOf(context).width >=
+                                                    1536.0) &&
+                                                (MediaQuery.sizeOf(context).width <=
+                                                    1727.0)) {
+                                              return 16.0;
+                                            } else if ((MediaQuery.sizeOf(context).width >=
+                                                    1728.0) &&
+                                                (MediaQuery.sizeOf(context).width <=
+                                                    1919.0)) {
+                                              return 18.0;
+                                            } else if ((MediaQuery.sizeOf(context).width >=
+                                                    1920.0) &&
+                                                (MediaQuery.sizeOf(context).width <=
+                                                    2239.0)) {
+                                              return 20.0;
+                                            } else if ((MediaQuery.sizeOf(context).width >=
+                                                    2240.0) &&
+                                                (MediaQuery.sizeOf(context).width <=
+                                                    2559.0)) {
+                                              return 22.0;
+                                            } else if (MediaQuery.sizeOf(context)
+                                                    .width >=
+                                                2560.0) {
+                                              return 22.0;
+                                            } else {
+                                              return 18.0;
+                                            }
+                                          }(),
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                  ),
+                                ),
+                                InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    context.pushNamed(
+                                      'TermsOfUse',
+                                      extra: <String, dynamic>{
+                                        kTransitionInfoKey: const TransitionInfo(
+                                          hasTransition: true,
+                                          transitionType:
+                                              PageTransitionType.fade,
+                                          duration: Duration(milliseconds: 0),
+                                        ),
+                                      },
+                                    );
+                                  },
+                                  child: Text(
+                                    'Terms of Use',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Poppins',
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryBackground,
+                                          fontSize: () {
+                                            if ((MediaQuery.sizeOf(context).width >=
+                                                    1280.0) &&
+                                                (MediaQuery.sizeOf(context).width <=
+                                                    1439.0)) {
+                                              return 14.0;
+                                            } else if ((MediaQuery.sizeOf(context).width >=
+                                                    1440.0) &&
+                                                (MediaQuery.sizeOf(context).width <=
+                                                    1511.0)) {
+                                              return 15.0;
+                                            } else if ((MediaQuery.sizeOf(context).width >=
+                                                    1512.0) &&
+                                                (MediaQuery.sizeOf(context).width <=
+                                                    1535.0)) {
+                                              return 16.0;
+                                            } else if ((MediaQuery.sizeOf(context).width >=
+                                                    1536.0) &&
+                                                (MediaQuery.sizeOf(context).width <=
+                                                    1727.0)) {
+                                              return 16.0;
+                                            } else if ((MediaQuery.sizeOf(context).width >=
+                                                    1728.0) &&
+                                                (MediaQuery.sizeOf(context).width <=
+                                                    1919.0)) {
+                                              return 18.0;
+                                            } else if ((MediaQuery.sizeOf(context).width >=
+                                                    1920.0) &&
+                                                (MediaQuery.sizeOf(context).width <=
+                                                    2239.0)) {
+                                              return 20.0;
+                                            } else if ((MediaQuery.sizeOf(context).width >=
+                                                    2240.0) &&
+                                                (MediaQuery.sizeOf(context).width <=
+                                                    2559.0)) {
+                                              return 22.0;
+                                            } else if (MediaQuery.sizeOf(context)
+                                                    .width >=
+                                                2560.0) {
+                                              return 22.0;
+                                            } else {
+                                              return 18.0;
+                                            }
+                                          }(),
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                  ),
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Expanded(
+                                      child: InkWell(
+                                        splashColor: Colors.transparent,
+                                        focusColor: Colors.transparent,
+                                        hoverColor: Colors.transparent,
+                                        highlightColor: Colors.transparent,
+                                        onTap: () async {
+                                          context.pushNamed(
+                                            'PrivacyPolicy',
+                                            extra: <String, dynamic>{
+                                              kTransitionInfoKey:
+                                                  const TransitionInfo(
+                                                hasTransition: true,
+                                                transitionType:
+                                                    PageTransitionType.fade,
+                                                duration:
+                                                    Duration(milliseconds: 0),
+                                              ),
+                                            },
+                                          );
+                                        },
+                                        child: Text(
+                                          'Privacy Policy',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryBackground,
                                                 fontSize: () {
                                                   if ((MediaQuery.sizeOf(context).width >=
                                                           1280.0) &&
@@ -1834,15 +1528,70 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 }(),
                                                 fontWeight: FontWeight.bold,
                                               ),
-                                        )),
-                                      ],
+                                        ),
+                                      ),
                                     ),
-                                  ].divide(const SizedBox(height: 10.0)),
+                                    SelectionArea(
+                                        child: Text(
+                                      '© 2023 Capstoneers, All Rights Reserved.',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryBackground,
+                                            fontSize: () {
+                                              if ((MediaQuery.sizeOf(context).width >=
+                                                      1280.0) &&
+                                                  (MediaQuery.sizeOf(context).width <=
+                                                      1439.0)) {
+                                                return 14.0;
+                                              } else if ((MediaQuery.sizeOf(context).width >=
+                                                      1440.0) &&
+                                                  (MediaQuery.sizeOf(context).width <=
+                                                      1511.0)) {
+                                                return 15.0;
+                                              } else if ((MediaQuery.sizeOf(context).width >=
+                                                      1512.0) &&
+                                                  (MediaQuery.sizeOf(context).width <=
+                                                      1535.0)) {
+                                                return 16.0;
+                                              } else if ((MediaQuery.sizeOf(context).width >=
+                                                      1536.0) &&
+                                                  (MediaQuery.sizeOf(context).width <=
+                                                      1727.0)) {
+                                                return 16.0;
+                                              } else if ((MediaQuery.sizeOf(context).width >=
+                                                      1728.0) &&
+                                                  (MediaQuery.sizeOf(context).width <=
+                                                      1919.0)) {
+                                                return 18.0;
+                                              } else if ((MediaQuery.sizeOf(context).width >=
+                                                      1920.0) &&
+                                                  (MediaQuery.sizeOf(context).width <=
+                                                      2239.0)) {
+                                                return 20.0;
+                                              } else if ((MediaQuery.sizeOf(context).width >=
+                                                      2240.0) &&
+                                                  (MediaQuery.sizeOf(context).width <=
+                                                      2559.0)) {
+                                                return 22.0;
+                                              } else if (MediaQuery.sizeOf(context).width >=
+                                                  2560.0) {
+                                                return 22.0;
+                                              } else {
+                                                return 18.0;
+                                              }
+                                            }(),
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                    )),
+                                  ],
                                 ),
-                              ),
-                            ],
+                              ].divide(const SizedBox(height: 10.0)),
+                            ),
                           ),
-                        ),
+                        ],
                       ),
                     ),
                   if (responsiveVisibility(
@@ -2037,7 +1786,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                             padding:
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 20.0),
-                                            child: AutoSizeText(
+                                            child: SelectionArea(
+                                                child: AutoSizeText(
                                               'Discover  \nKapampangan Cuisine',
                                               textAlign: TextAlign.center,
                                               style: FlutterFlowTheme.of(
@@ -2051,9 +1801,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                     fontSize: 20.0,
                                                     fontWeight: FontWeight.bold,
                                                   ),
-                                            ),
+                                            )),
                                           ),
-                                          Text(
+                                          SelectionArea(
+                                              child: Text(
                                             'Embark on a delightful journey through the world of Kapampangan cuisine with the Kapam-Pamangan app. Access a wide range of over 150+ Kapampangan recipes, from mouthwatering main dishes to savory soups and delightful desserts. Find your favorites and start a culinary adventure today!',
                                             textAlign: TextAlign.justify,
                                             style: FlutterFlowTheme.of(context)
@@ -2065,7 +1816,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       .primaryBackground,
                                                   fontSize: 13.0,
                                                 ),
-                                          ),
+                                          )),
                                         ],
                                       ),
                                     ),
@@ -2080,7 +1831,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 20.0),
-                                          child: AutoSizeText(
+                                          child: SelectionArea(
+                                              child: AutoSizeText(
                                             'App Features',
                                             textAlign: TextAlign.center,
                                             style: FlutterFlowTheme.of(context)
@@ -2093,9 +1845,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   fontSize: 20.0,
                                                   fontWeight: FontWeight.bold,
                                                 ),
-                                          ),
+                                          )),
                                         ),
-                                        Text(
+                                        SelectionArea(
+                                            child: Text(
                                           'Explore Kapampangan cuisine like never before with the Kapam-Pamangan app, packed with a diverse range of features to enhance your culinary experience. From searching for numerous Kapampangan recipes to generating recommended dishes based on available ingredients, our app is your indispensable kitchen companion. Dive into the world of Kapampangan cooking with step-by-step cooking instructions, meal planning tools, and more!',
                                           textAlign: TextAlign.justify,
                                           style: FlutterFlowTheme.of(context)
@@ -2107,7 +1860,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         .primaryBackground,
                                                 fontSize: 13.0,
                                               ),
-                                        ),
+                                        )),
                                       ],
                                     ),
                                   ),
@@ -2142,7 +1895,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
                                     children: [
-                                      Text(
+                                      SelectionArea(
+                                          child: Text(
                                         'Explore Kapampamgan\nCusines. Download',
                                         textAlign: TextAlign.center,
                                         style: FlutterFlowTheme.of(context)
@@ -2152,7 +1906,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               fontSize: 13.0,
                                               fontWeight: FontWeight.bold,
                                             ),
-                                      ),
+                                      )),
                                       RichText(
                                         textScaleFactor: MediaQuery.of(context)
                                             .textScaleFactor,
@@ -2354,7 +2108,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           Align(
                                             alignment: const AlignmentDirectional(
                                                 -1.00, 0.00),
-                                            child: Text(
+                                            child: SelectionArea(
+                                                child: Text(
                                               '© 2023 Capstoneers, All Rights Reserved.',
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -2366,7 +2121,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                             .primaryBackground,
                                                         fontSize: 6.0,
                                                       ),
-                                            ),
+                                            )),
                                           ),
                                         ],
                                       ),
@@ -2596,9 +2351,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 ),
                                           )).animateOnActionTrigger(
                                               animationsMap[
-                                                  'textOnActionTriggerAnimation6']!,
+                                                  'textOnActionTriggerAnimation2']!,
                                               hasBeenTriggered:
-                                                  hasTextTriggered6),
+                                                  hasTextTriggered2),
                                         ),
                                         Align(
                                           alignment:
@@ -2628,9 +2383,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 ),
                                           )).animateOnActionTrigger(
                                               animationsMap[
-                                                  'textOnActionTriggerAnimation7']!,
+                                                  'textOnActionTriggerAnimation3']!,
                                               hasBeenTriggered:
-                                                  hasTextTriggered7),
+                                                  hasTextTriggered3),
                                         ),
                                         Align(
                                           alignment:
@@ -2666,9 +2421,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                             )).animateOnActionTrigger(
                                                 animationsMap[
-                                                    'textOnActionTriggerAnimation8']!,
+                                                    'textOnActionTriggerAnimation4']!,
                                                 hasBeenTriggered:
-                                                    hasTextTriggered8),
+                                                    hasTextTriggered4),
                                           ),
                                         ),
                                       ],

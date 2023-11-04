@@ -8,10 +8,6 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   final unfocusNode = FocusNode();
   // State field(s) for Column widget.
   ScrollController? columnController;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered1 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered2 = false;
 
   /// Initialization and disposal methods.
 

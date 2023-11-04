@@ -199,7 +199,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                               color: FFAppState()
                                                           .MenuBtnColor ==
                                                       'Home'
-                                                  ? const Color(0xFF6A994E)
+                                                  ? const Color(0xFFFEC465)
                                                   : FlutterFlowTheme.of(context)
                                                       .primaryBackground,
                                               fontSize: () {
@@ -259,7 +259,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                           color: Color(0x00FFFFFF),
                                           width: 0.0,
                                         ),
-                                        hoverTextColor: const Color(0xFFA7C957),
+                                        hoverTextColor: const Color(0xFFFDDBA9),
                                       ),
                                       showLoadingIndicator: false,
                                     ),
@@ -286,7 +286,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                               color: FFAppState()
                                                           .MenuBtnColor ==
                                                       'About'
-                                                  ? const Color(0xFF6A994E)
+                                                  ? const Color(0xFFFEC465)
                                                   : FlutterFlowTheme.of(context)
                                                       .primaryBackground,
                                               fontSize: () {
@@ -346,7 +346,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                           color: Color(0x00FFFFFF),
                                           width: 0.0,
                                         ),
-                                        hoverTextColor: const Color(0xFFA7C957),
+                                        hoverTextColor: const Color(0xFFFDDBA9),
                                       ),
                                       showLoadingIndicator: false,
                                     ),
@@ -426,7 +426,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                           color: Color(0x000FFFFF),
                                           width: 0.0,
                                         ),
-                                        hoverTextColor: const Color(0xFFA7C957),
+                                        hoverTextColor: const Color(0xFFFDDBA9),
                                       ),
                                       showLoadingIndicator: false,
                                     ),

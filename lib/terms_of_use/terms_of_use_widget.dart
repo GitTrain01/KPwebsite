@@ -197,11 +197,8 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                             .titleSmall
                                             .override(
                                               fontFamily: 'Poppins',
-                                              color: FFAppState()
-                                                          .MenuBtnColor ==
-                                                      'Home'
-                                                  ? const Color(0xFF6A994E)
-                                                  : FlutterFlowTheme.of(context)
+                                              color:
+                                                  FlutterFlowTheme.of(context)
                                                       .primaryBackground,
                                               fontSize: () {
                                                 if ((MediaQuery.sizeOf(context).width >=
@@ -260,7 +257,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                           color: Color(0x00FFFFFF),
                                           width: 0.0,
                                         ),
-                                        hoverTextColor: const Color(0xFFA7C957),
+                                        hoverTextColor: const Color(0xFFFDDBA9),
                                       ),
                                       showLoadingIndicator: false,
                                     ),
@@ -295,11 +292,8 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                             .titleSmall
                                             .override(
                                               fontFamily: 'Poppins',
-                                              color: FFAppState()
-                                                          .MenuBtnColor ==
-                                                      'About'
-                                                  ? const Color(0xFF6A994E)
-                                                  : FlutterFlowTheme.of(context)
+                                              color:
+                                                  FlutterFlowTheme.of(context)
                                                       .primaryBackground,
                                               fontSize: () {
                                                 if ((MediaQuery.sizeOf(context).width >=
@@ -358,7 +352,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                           color: Color(0x00FFFFFF),
                                           width: 0.0,
                                         ),
-                                        hoverTextColor: const Color(0xFFA7C957),
+                                        hoverTextColor: const Color(0xFFFDDBA9),
                                       ),
                                       showLoadingIndicator: false,
                                     ),
@@ -438,7 +432,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
                                           color: Color(0x000FFFFF),
                                           width: 0.0,
                                         ),
-                                        hoverTextColor: const Color(0xFFA7C957),
+                                        hoverTextColor: const Color(0xFFFDDBA9),
                                       ),
                                       showLoadingIndicator: false,
                                     ),
