@@ -2786,7 +2786,16 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primaryBackground,
-                                                  fontSize: 15.0,
+                                                  fontSize: (MediaQuery.sizeOf(
+                                                                      context)
+                                                                  .width >=
+                                                              800.0) &&
+                                                          (MediaQuery.sizeOf(
+                                                                      context)
+                                                                  .width <=
+                                                              1023.0)
+                                                      ? 10.0
+                                                      : 15.0,
                                                 ),
                                           ),
                                         ),
@@ -2827,16 +2836,25 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 },
                                                 child: Text(
                                                   'Privacy Policy',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .primaryBackground,
-                                                        fontSize: 15.0,
-                                                      ),
+                                                  style:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Poppins',
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryBackground,
+                                                            fontSize: (MediaQuery.sizeOf(context)
+                                                                            .width >=
+                                                                        800.0) &&
+                                                                    (MediaQuery.sizeOf(context)
+                                                                            .width <=
+                                                                        1023.0)
+                                                                ? 10.0
+                                                                : 15.0,
+                                                          ),
                                                 ),
                                               ),
                                             ),

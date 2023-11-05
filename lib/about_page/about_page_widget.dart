@@ -1,3 +1,5 @@
+import '/components/footer_phone_widget.dart';
+import '/components/footer_tablet_widget.dart';
 import '/components/menu_bar_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -516,114 +518,38 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
                                             children: [
-                                              Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 0.0, 0.0, 50.0),
-                                                child: Container(
-                                                  width:
-                                                      MediaQuery.sizeOf(context)
-                                                              .width *
-                                                          0.6,
-                                                  decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryBackground,
-                                                  ),
-                                                  child: Padding(
-                                                    padding:
-                                                        const EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 10.0,
-                                                                0.0, 0.0),
-                                                    child: Column(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      children: [
-                                                        Align(
-                                                          alignment:
-                                                              const AlignmentDirectional(
-                                                                  -1.00, 0.00),
-                                                          child: Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        10.0,
-                                                                        35.0,
-                                                                        10.0,
-                                                                        0.0),
-                                                            child: Text(
-                                                              'About Kapam-Pamangan',
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        'Poppins',
-                                                                    fontSize:
-                                                                        () {
-                                                                      if ((MediaQuery.sizeOf(context).width >=
-                                                                              1280.0) &&
-                                                                          (MediaQuery.sizeOf(context).width <=
-                                                                              1439.0)) {
-                                                                        return 14.0;
-                                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                                              1440.0) &&
-                                                                          (MediaQuery.sizeOf(context).width <=
-                                                                              1511.0)) {
-                                                                        return 15.0;
-                                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                                              1512.0) &&
-                                                                          (MediaQuery.sizeOf(context).width <=
-                                                                              1535.0)) {
-                                                                        return 16.0;
-                                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                                              1536.0) &&
-                                                                          (MediaQuery.sizeOf(context).width <=
-                                                                              1727.0)) {
-                                                                        return 17.0;
-                                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                                              1728.0) &&
-                                                                          (MediaQuery.sizeOf(context).width <=
-                                                                              1919.0)) {
-                                                                        return 20.0;
-                                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                                              1920.0) &&
-                                                                          (MediaQuery.sizeOf(context).width <=
-                                                                              2239.0)) {
-                                                                        return 20.0;
-                                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                                              2240.0) &&
-                                                                          (MediaQuery.sizeOf(context).width <=
-                                                                              2559.0)) {
-                                                                        return 23.0;
-                                                                      } else if (MediaQuery.sizeOf(context)
-                                                                              .width >=
-                                                                          2560.0) {
-                                                                        return 26.0;
-                                                                      } else {
-                                                                        return 20.0;
-                                                                      }
-                                                                    }(),
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .bold,
-                                                                  ),
-                                                            ),
-                                                          ),
-                                                        ),
-                                                        Padding(
+                                              Container(
+                                                width:
+                                                    MediaQuery.sizeOf(context)
+                                                            .width *
+                                                        0.6,
+                                                decoration: BoxDecoration(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryBackground,
+                                                ),
+                                                child: Padding(
+                                                  padding: const EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 10.0, 0.0, 0.0),
+                                                  child: Column(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    children: [
+                                                      Align(
+                                                        alignment:
+                                                            const AlignmentDirectional(
+                                                                -1.00, 0.00),
+                                                        child: Padding(
                                                           padding:
                                                               const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       10.0,
-                                                                      10.0,
+                                                                      35.0,
                                                                       10.0,
                                                                       0.0),
-                                                          child: SelectionArea(
-                                                              child: Text(
-                                                            'Welcome to Kapam-Pamangan, a mobile recipe application dedicated to celebrating and preserving the rich culture of Kapampangan cuisine. This application was carefully developed by a group of IT college students from the Institute of Business and Computing Education of Mabalacat City College as part of their Capstone project.\n\nKapam-Pamangan is the ultimate culinary companion for anyone with a passion for Kapampangan recipes, known for their unique flavors and traditional heritage. Whether you\'re an aspiring cook honing your skills or a seasoned pro seeking local inspiration, this recipe app has something special to offer.\n\nOur mission is not only to share the delights of Kapampangan cuisine but also to protect your privacy and data. We are committed to data protection and full compliance with data protection laws. Kapam-Pamangan respects your privacy, and we ensure that your data is safeguarded while you savor the traditions that make Kapampangan cuisine truly remarkable. It\'s the beginning of a flavorful culinary adventure, a journey that transports you back to the traditional tastes of Kapampangan cuisine while preserving cherished recipes that bind our community together.\n\nExplore a diverse selection of Kapampangan recipes, from hearty main dishes to savory soups and delightful pastries, drinks, and more. The app invites food enthusiasts and casual cooks alike to delve into the vibrant local food culture and rediscover the joys of Kapampangan cooking. It\'s the beginning of a flavorful culinary adventure, a journey that transports you back to the traditional tastes of Kapampangan cuisine while preserving cherished recipes that bind our community together.\n\nOur application is packed with a variety of features designed to meet all your culinary needs. You can easily search for a wide range of Kapampangan recipes, generate personalized recipes based on your available ingredients, access step-by-step cooking instructions, plan your meals, and much more. It\'s like having a personal chef by your side, guiding you through each delightful step of your cooking journey.\n\nKapam-Pamangan is not just an app; it\'s a labor of love and a tribute to Kapampangan culinary heritage. We hope this culinary companion enriches your cooking experience, inspires creativity in your kitchen, and brings the warmth of Kapampangan flavors to your table. Join us on this flavorful journey, and together, let\'s savor the traditions that make Kapampangan cuisine truly remarkable. Happy cooking!',
-                                                            textAlign: TextAlign
-                                                                .justify,
+                                                          child: Text(
+                                                            'About Kapam-Pamangan',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -674,94 +600,98 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                                       return 20.0;
                                                                     }
                                                                   }(),
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold,
                                                                 ),
-                                                          )),
-                                                        ),
-                                                        Align(
-                                                          alignment:
-                                                              const AlignmentDirectional(
-                                                                  -1.00, 0.00),
-                                                          child: Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        10.0,
-                                                                        25.0,
-                                                                        10.0,
-                                                                        0.0),
-                                                            child: Text(
-                                                              'Our Story and Team',
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        'Poppins',
-                                                                    fontSize:
-                                                                        () {
-                                                                      if ((MediaQuery.sizeOf(context).width >=
-                                                                              1280.0) &&
-                                                                          (MediaQuery.sizeOf(context).width <=
-                                                                              1439.0)) {
-                                                                        return 14.0;
-                                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                                              1440.0) &&
-                                                                          (MediaQuery.sizeOf(context).width <=
-                                                                              1511.0)) {
-                                                                        return 15.0;
-                                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                                              1512.0) &&
-                                                                          (MediaQuery.sizeOf(context).width <=
-                                                                              1535.0)) {
-                                                                        return 16.0;
-                                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                                              1536.0) &&
-                                                                          (MediaQuery.sizeOf(context).width <=
-                                                                              1727.0)) {
-                                                                        return 17.0;
-                                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                                              1728.0) &&
-                                                                          (MediaQuery.sizeOf(context).width <=
-                                                                              1919.0)) {
-                                                                        return 20.0;
-                                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                                              1920.0) &&
-                                                                          (MediaQuery.sizeOf(context).width <=
-                                                                              2239.0)) {
-                                                                        return 20.0;
-                                                                      } else if ((MediaQuery.sizeOf(context).width >=
-                                                                              2240.0) &&
-                                                                          (MediaQuery.sizeOf(context).width <=
-                                                                              2559.0)) {
-                                                                        return 23.0;
-                                                                      } else if (MediaQuery.sizeOf(context)
-                                                                              .width >=
-                                                                          2560.0) {
-                                                                        return 26.0;
-                                                                      } else {
-                                                                        return 20.0;
-                                                                      }
-                                                                    }(),
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .bold,
-                                                                  ),
-                                                            ),
                                                           ),
                                                         ),
-                                                        Padding(
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    10.0,
+                                                                    10.0,
+                                                                    10.0,
+                                                                    0.0),
+                                                        child: SelectionArea(
+                                                            child: Text(
+                                                          'Welcome to Kapam-Pamangan, a mobile recipe application dedicated to celebrating and preserving the rich culture of Kapampangan cuisine. This application was carefully developed by a group of IT college students from the Institute of Business and Computing Education of Mabalacat City College as part of their Capstone project.\n\nKapam-Pamangan is the ultimate culinary companion for anyone with a passion for Kapampangan recipes, known for their unique flavors and traditional heritage. Whether you\'re an aspiring cook honing your skills or a seasoned pro seeking local inspiration, this recipe app has something special to offer.\n\nOur mission is not only to share the delights of Kapampangan cuisine but also to protect your privacy and data. We are committed to data protection and full compliance with data protection laws. Kapam-Pamangan respects your privacy, and we ensure that your data is safeguarded while you savor the traditions that make Kapampangan cuisine truly remarkable. It\'s the beginning of a flavorful culinary adventure, a journey that transports you back to the traditional tastes of Kapampangan cuisine while preserving cherished recipes that bind our community together.\n\nExplore a diverse selection of Kapampangan recipes, from hearty main dishes to savory soups and delightful pastries, drinks, and more. The app invites food enthusiasts and casual cooks alike to delve into the vibrant local food culture and rediscover the joys of Kapampangan cooking. It\'s the beginning of a flavorful culinary adventure, a journey that transports you back to the traditional tastes of Kapampangan cuisine while preserving cherished recipes that bind our community together.\n\nOur application is packed with a variety of features designed to meet all your culinary needs. You can easily search for a wide range of Kapampangan recipes, generate personalized recipes based on your available ingredients, access step-by-step cooking instructions, plan your meals, and much more. It\'s like having a personal chef by your side, guiding you through each delightful step of your cooking journey.\n\nKapam-Pamangan is not just an app; it\'s a labor of love and a tribute to Kapampangan culinary heritage. We hope this culinary companion enriches your cooking experience, inspires creativity in your kitchen, and brings the warmth of Kapampangan flavors to your table. Join us on this flavorful journey, and together, let\'s savor the traditions that make Kapampangan cuisine truly remarkable. Happy cooking!',
+                                                          textAlign:
+                                                              TextAlign.justify,
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Poppins',
+                                                                fontSize: () {
+                                                                  if ((MediaQuery.sizeOf(context).width >=
+                                                                          1280.0) &&
+                                                                      (MediaQuery.sizeOf(context).width <=
+                                                                          1439.0)) {
+                                                                    return 14.0;
+                                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                                          1440.0) &&
+                                                                      (MediaQuery.sizeOf(context).width <=
+                                                                          1511.0)) {
+                                                                    return 15.0;
+                                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                                          1512.0) &&
+                                                                      (MediaQuery.sizeOf(context).width <=
+                                                                          1535.0)) {
+                                                                    return 16.0;
+                                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                                          1536.0) &&
+                                                                      (MediaQuery.sizeOf(context).width <=
+                                                                          1727.0)) {
+                                                                    return 17.0;
+                                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                                          1728.0) &&
+                                                                      (MediaQuery.sizeOf(context)
+                                                                              .width <=
+                                                                          1919.0)) {
+                                                                    return 20.0;
+                                                                  } else if ((MediaQuery.sizeOf(context)
+                                                                              .width >=
+                                                                          1920.0) &&
+                                                                      (MediaQuery.sizeOf(context)
+                                                                              .width <=
+                                                                          2239.0)) {
+                                                                    return 20.0;
+                                                                  } else if ((MediaQuery.sizeOf(context)
+                                                                              .width >=
+                                                                          2240.0) &&
+                                                                      (MediaQuery.sizeOf(context)
+                                                                              .width <=
+                                                                          2559.0)) {
+                                                                    return 23.0;
+                                                                  } else if (MediaQuery.sizeOf(context)
+                                                                          .width >=
+                                                                      2560.0) {
+                                                                    return 26.0;
+                                                                  } else {
+                                                                    return 20.0;
+                                                                  }
+                                                                }(),
+                                                              ),
+                                                        )),
+                                                      ),
+                                                      Align(
+                                                        alignment:
+                                                            const AlignmentDirectional(
+                                                                -1.00, 0.00),
+                                                        child: Padding(
                                                           padding:
                                                               const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       10.0,
-                                                                      10.0,
+                                                                      25.0,
                                                                       10.0,
                                                                       0.0),
-                                                          child: SelectionArea(
-                                                              child: Text(
-                                                            'Our journey began with a creative group of six IT students who identified a big gap in the market for recipe apps which specializes on Kapampangan recipes, despite Pampanga being regarded by many as the culinary capital of the Philippines. Inspired by the rich culinary heritage of our region, we embarked on a mission to create an app that would not only bridge this gap but also make these cherished recipes accessible to a wider audience.\n\n\nKapam-Pamangan stands as a heartfelt tribute to the flavors, traditions, and cultural significance that have profoundly shaped our community for generations. Our passionate team embarked on this extraordinary culinary adventure, driven by an unwavering love for Kapampangan cuisine. \n\nTogether, we have breathed life into this app, drawing inspiration from renowned Kapampangan cookbooks including Atching Lillian\'s Heirloom Recipes by Lillian Mercado-Lising Borromeo and Cocina Sulipeña: Culinary Gems from Old Pampanga by Gene Gonzalez. These cherished culinary books, brimming with time-honored wisdom, have guided us in our quest to capture the essence of Kapampangan cooking and share it with the world.\n\nWith the invaluable support and guidance of the experienced professors, dedicated instructors, and our cherished technical advisors from the Institute of Business and Computing Education and Institute of Hospitality and Tourism Management, and through countless hours of meticulous research, development, and attention to detail, we\'ve crafted an app that aims to not only preserve these treasured recipes but also celebrates the culture that surrounds them. Kapam-Pamangan is a labor of our unwavering commitment to preserving and promoting the rich tapestry of Kapampangan cuisine.\n\nAs we invite you to embark on this gastronomic journey with us, we hope that Kapam-Pamangan enriches your culinary experiences, inspires creativity in your kitchen, and becomes a cherished companion in your exploration of Kapampangan flavors. Together, let\'s continue to savor the traditions that make Kapampangan cuisine truly extraordinary.\n',
-                                                            textAlign: TextAlign
-                                                                .justify,
+                                                          child: Text(
+                                                            'Our Story and Team',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -812,16 +742,470 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                                       return 20.0;
                                                                     }
                                                                   }(),
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold,
                                                                 ),
-                                                          )),
+                                                          ),
                                                         ),
-                                                      ].addToEnd(const SizedBox(
-                                                          height: 50.0)),
-                                                    ),
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    10.0,
+                                                                    10.0,
+                                                                    10.0,
+                                                                    0.0),
+                                                        child: SelectionArea(
+                                                            child: Text(
+                                                          'Our journey began with a creative group of six IT students who identified a big gap in the market for recipe apps which specializes on Kapampangan recipes, despite Pampanga being regarded by many as the culinary capital of the Philippines. Inspired by the rich culinary heritage of our region, we embarked on a mission to create an app that would not only bridge this gap but also make these cherished recipes accessible to a wider audience.\n\n\nKapam-Pamangan stands as a heartfelt tribute to the flavors, traditions, and cultural significance that have profoundly shaped our community for generations. Our passionate team embarked on this extraordinary culinary adventure, driven by an unwavering love for Kapampangan cuisine. \n\nTogether, we have breathed life into this app, drawing inspiration from renowned Kapampangan cookbooks including Atching Lillian\'s Heirloom Recipes by Lillian Mercado-Lising Borromeo and Cocina Sulipeña: Culinary Gems from Old Pampanga by Gene Gonzalez. These cherished culinary books, brimming with time-honored wisdom, have guided us in our quest to capture the essence of Kapampangan cooking and share it with the world.\n\nWith the invaluable support and guidance of the experienced professors, dedicated instructors, and our cherished technical advisors from the Institute of Business and Computing Education and Institute of Hospitality and Tourism Management, and through countless hours of meticulous research, development, and attention to detail, we\'ve crafted an app that aims to not only preserve these treasured recipes but also celebrates the culture that surrounds them. Kapam-Pamangan is a labor of our unwavering commitment to preserving and promoting the rich tapestry of Kapampangan cuisine.\n\nAs we invite you to embark on this gastronomic journey with us, we hope that Kapam-Pamangan enriches your culinary experiences, inspires creativity in your kitchen, and becomes a cherished companion in your exploration of Kapampangan flavors. Together, let\'s continue to savor the traditions that make Kapampangan cuisine truly extraordinary.\n',
+                                                          textAlign:
+                                                              TextAlign.justify,
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Poppins',
+                                                                fontSize: () {
+                                                                  if ((MediaQuery.sizeOf(context).width >=
+                                                                          1280.0) &&
+                                                                      (MediaQuery.sizeOf(context).width <=
+                                                                          1439.0)) {
+                                                                    return 14.0;
+                                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                                          1440.0) &&
+                                                                      (MediaQuery.sizeOf(context).width <=
+                                                                          1511.0)) {
+                                                                    return 15.0;
+                                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                                          1512.0) &&
+                                                                      (MediaQuery.sizeOf(context).width <=
+                                                                          1535.0)) {
+                                                                    return 16.0;
+                                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                                          1536.0) &&
+                                                                      (MediaQuery.sizeOf(context).width <=
+                                                                          1727.0)) {
+                                                                    return 17.0;
+                                                                  } else if ((MediaQuery.sizeOf(context).width >=
+                                                                          1728.0) &&
+                                                                      (MediaQuery.sizeOf(context)
+                                                                              .width <=
+                                                                          1919.0)) {
+                                                                    return 20.0;
+                                                                  } else if ((MediaQuery.sizeOf(context)
+                                                                              .width >=
+                                                                          1920.0) &&
+                                                                      (MediaQuery.sizeOf(context)
+                                                                              .width <=
+                                                                          2239.0)) {
+                                                                    return 20.0;
+                                                                  } else if ((MediaQuery.sizeOf(context)
+                                                                              .width >=
+                                                                          2240.0) &&
+                                                                      (MediaQuery.sizeOf(context)
+                                                                              .width <=
+                                                                          2559.0)) {
+                                                                    return 23.0;
+                                                                  } else if (MediaQuery.sizeOf(context)
+                                                                          .width >=
+                                                                      2560.0) {
+                                                                    return 26.0;
+                                                                  } else {
+                                                                    return 20.0;
+                                                                  }
+                                                                }(),
+                                                              ),
+                                                        )),
+                                                      ),
+                                                    ].addToEnd(
+                                                        const SizedBox(height: 50.0)),
                                                   ),
                                                 ),
                                               ),
                                             ],
+                                          ),
+                                          Container(
+                                            width: double.infinity,
+                                            height: 180.0,
+                                            decoration: BoxDecoration(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryBackground,
+                                              image: DecorationImage(
+                                                fit: BoxFit.fill,
+                                                image: Image.asset(
+                                                  'assets/images/Website_Footer.png',
+                                                ).image,
+                                              ),
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      57.0, 31.0, 30.0, 10.0),
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.end,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  InkWell(
+                                                    splashColor:
+                                                        Colors.transparent,
+                                                    focusColor:
+                                                        Colors.transparent,
+                                                    hoverColor:
+                                                        Colors.transparent,
+                                                    highlightColor:
+                                                        Colors.transparent,
+                                                    onTap: () async {
+                                                      context.pushNamed(
+                                                        'AboutPage',
+                                                        extra: <String,
+                                                            dynamic>{
+                                                          kTransitionInfoKey:
+                                                              const TransitionInfo(
+                                                            hasTransition: true,
+                                                            transitionType:
+                                                                PageTransitionType
+                                                                    .fade,
+                                                            duration: Duration(
+                                                                milliseconds:
+                                                                    0),
+                                                          ),
+                                                        },
+                                                      );
+
+                                                      setState(() {
+                                                        FFAppState()
+                                                                .KPInformation =
+                                                            'AboutUs';
+                                                        FFAppState()
+                                                                .MenuBtnColor =
+                                                            'About';
+                                                      });
+                                                    },
+                                                    child: Text(
+                                                      'About',
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Poppins',
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryBackground,
+                                                            fontSize: () {
+                                                              if ((MediaQuery.sizeOf(context).width >=
+                                                                      1280.0) &&
+                                                                  (MediaQuery.sizeOf(context).width <=
+                                                                      1439.0)) {
+                                                                return 14.0;
+                                                              } else if ((MediaQuery.sizeOf(context).width >=
+                                                                      1440.0) &&
+                                                                  (MediaQuery.sizeOf(context).width <=
+                                                                      1511.0)) {
+                                                                return 15.0;
+                                                              } else if ((MediaQuery.sizeOf(context).width >=
+                                                                      1512.0) &&
+                                                                  (MediaQuery.sizeOf(context).width <=
+                                                                      1535.0)) {
+                                                                return 16.0;
+                                                              } else if ((MediaQuery.sizeOf(context).width >=
+                                                                      1536.0) &&
+                                                                  (MediaQuery.sizeOf(context).width <=
+                                                                      1727.0)) {
+                                                                return 16.0;
+                                                              } else if ((MediaQuery.sizeOf(context).width >=
+                                                                      1728.0) &&
+                                                                  (MediaQuery.sizeOf(context).width <=
+                                                                      1919.0)) {
+                                                                return 18.0;
+                                                              } else if ((MediaQuery.sizeOf(context)
+                                                                          .width >=
+                                                                      1920.0) &&
+                                                                  (MediaQuery.sizeOf(context)
+                                                                          .width <=
+                                                                      2239.0)) {
+                                                                return 20.0;
+                                                              } else if ((MediaQuery.sizeOf(context)
+                                                                          .width >=
+                                                                      2240.0) &&
+                                                                  (MediaQuery.sizeOf(context)
+                                                                          .width <=
+                                                                      2559.0)) {
+                                                                return 22.0;
+                                                              } else if (MediaQuery.sizeOf(context)
+                                                                      .width >=
+                                                                  2560.0) {
+                                                                return 22.0;
+                                                              } else {
+                                                                return 18.0;
+                                                              }
+                                                            }(),
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                          ),
+                                                    ),
+                                                  ),
+                                                  InkWell(
+                                                    splashColor:
+                                                        Colors.transparent,
+                                                    focusColor:
+                                                        Colors.transparent,
+                                                    hoverColor:
+                                                        Colors.transparent,
+                                                    highlightColor:
+                                                        Colors.transparent,
+                                                    onTap: () async {
+                                                      context.pushNamed(
+                                                        'TermsOfUse',
+                                                        extra: <String,
+                                                            dynamic>{
+                                                          kTransitionInfoKey:
+                                                              const TransitionInfo(
+                                                            hasTransition: true,
+                                                            transitionType:
+                                                                PageTransitionType
+                                                                    .fade,
+                                                            duration: Duration(
+                                                                milliseconds:
+                                                                    0),
+                                                          ),
+                                                        },
+                                                      );
+                                                    },
+                                                    child: Text(
+                                                      'Terms of Use',
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Poppins',
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryBackground,
+                                                            fontSize: () {
+                                                              if ((MediaQuery.sizeOf(context).width >=
+                                                                      1280.0) &&
+                                                                  (MediaQuery.sizeOf(context).width <=
+                                                                      1439.0)) {
+                                                                return 14.0;
+                                                              } else if ((MediaQuery.sizeOf(context).width >=
+                                                                      1440.0) &&
+                                                                  (MediaQuery.sizeOf(context).width <=
+                                                                      1511.0)) {
+                                                                return 15.0;
+                                                              } else if ((MediaQuery.sizeOf(context).width >=
+                                                                      1512.0) &&
+                                                                  (MediaQuery.sizeOf(context).width <=
+                                                                      1535.0)) {
+                                                                return 16.0;
+                                                              } else if ((MediaQuery.sizeOf(context).width >=
+                                                                      1536.0) &&
+                                                                  (MediaQuery.sizeOf(context).width <=
+                                                                      1727.0)) {
+                                                                return 16.0;
+                                                              } else if ((MediaQuery.sizeOf(context).width >=
+                                                                      1728.0) &&
+                                                                  (MediaQuery.sizeOf(context).width <=
+                                                                      1919.0)) {
+                                                                return 18.0;
+                                                              } else if ((MediaQuery.sizeOf(context)
+                                                                          .width >=
+                                                                      1920.0) &&
+                                                                  (MediaQuery.sizeOf(context)
+                                                                          .width <=
+                                                                      2239.0)) {
+                                                                return 20.0;
+                                                              } else if ((MediaQuery.sizeOf(context)
+                                                                          .width >=
+                                                                      2240.0) &&
+                                                                  (MediaQuery.sizeOf(context)
+                                                                          .width <=
+                                                                      2559.0)) {
+                                                                return 22.0;
+                                                              } else if (MediaQuery.sizeOf(context)
+                                                                      .width >=
+                                                                  2560.0) {
+                                                                return 22.0;
+                                                              } else {
+                                                                return 18.0;
+                                                              }
+                                                            }(),
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                          ),
+                                                    ),
+                                                  ),
+                                                  Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    children: [
+                                                      Expanded(
+                                                        child: InkWell(
+                                                          splashColor: Colors
+                                                              .transparent,
+                                                          focusColor: Colors
+                                                              .transparent,
+                                                          hoverColor: Colors
+                                                              .transparent,
+                                                          highlightColor: Colors
+                                                              .transparent,
+                                                          onTap: () async {
+                                                            context.pushNamed(
+                                                              'PrivacyPolicy',
+                                                              extra: <String,
+                                                                  dynamic>{
+                                                                kTransitionInfoKey:
+                                                                    const TransitionInfo(
+                                                                  hasTransition:
+                                                                      true,
+                                                                  transitionType:
+                                                                      PageTransitionType
+                                                                          .fade,
+                                                                  duration: Duration(
+                                                                      milliseconds:
+                                                                          0),
+                                                                ),
+                                                              },
+                                                            );
+                                                          },
+                                                          child: Text(
+                                                            'Privacy Policy',
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Poppins',
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primaryBackground,
+                                                                  fontSize: () {
+                                                                    if ((MediaQuery.sizeOf(context).width >=
+                                                                            1280.0) &&
+                                                                        (MediaQuery.sizeOf(context).width <=
+                                                                            1439.0)) {
+                                                                      return 14.0;
+                                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                                            1440.0) &&
+                                                                        (MediaQuery.sizeOf(context).width <=
+                                                                            1511.0)) {
+                                                                      return 15.0;
+                                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                                            1512.0) &&
+                                                                        (MediaQuery.sizeOf(context).width <=
+                                                                            1535.0)) {
+                                                                      return 16.0;
+                                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                                            1536.0) &&
+                                                                        (MediaQuery.sizeOf(context).width <=
+                                                                            1727.0)) {
+                                                                      return 16.0;
+                                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                                            1728.0) &&
+                                                                        (MediaQuery.sizeOf(context).width <=
+                                                                            1919.0)) {
+                                                                      return 18.0;
+                                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                                            1920.0) &&
+                                                                        (MediaQuery.sizeOf(context).width <=
+                                                                            2239.0)) {
+                                                                      return 20.0;
+                                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                                            2240.0) &&
+                                                                        (MediaQuery.sizeOf(context).width <=
+                                                                            2559.0)) {
+                                                                      return 22.0;
+                                                                    } else if (MediaQuery.sizeOf(context)
+                                                                            .width >=
+                                                                        2560.0) {
+                                                                      return 22.0;
+                                                                    } else {
+                                                                      return 18.0;
+                                                                    }
+                                                                  }(),
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold,
+                                                                ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      SelectionArea(
+                                                          child: Text(
+                                                        '© 2023 Capstoneers, All Rights Reserved.',
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Poppins',
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryBackground,
+                                                                  fontSize: () {
+                                                                    if ((MediaQuery.sizeOf(context).width >=
+                                                                            1280.0) &&
+                                                                        (MediaQuery.sizeOf(context).width <=
+                                                                            1439.0)) {
+                                                                      return 14.0;
+                                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                                            1440.0) &&
+                                                                        (MediaQuery.sizeOf(context).width <=
+                                                                            1511.0)) {
+                                                                      return 15.0;
+                                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                                            1512.0) &&
+                                                                        (MediaQuery.sizeOf(context).width <=
+                                                                            1535.0)) {
+                                                                      return 16.0;
+                                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                                            1536.0) &&
+                                                                        (MediaQuery.sizeOf(context).width <=
+                                                                            1727.0)) {
+                                                                      return 16.0;
+                                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                                            1728.0) &&
+                                                                        (MediaQuery.sizeOf(context).width <=
+                                                                            1919.0)) {
+                                                                      return 18.0;
+                                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                                            1920.0) &&
+                                                                        (MediaQuery.sizeOf(context).width <=
+                                                                            2239.0)) {
+                                                                      return 20.0;
+                                                                    } else if ((MediaQuery.sizeOf(context).width >=
+                                                                            2240.0) &&
+                                                                        (MediaQuery.sizeOf(context).width <=
+                                                                            2559.0)) {
+                                                                      return 22.0;
+                                                                    } else if (MediaQuery.sizeOf(context)
+                                                                            .width >=
+                                                                        2560.0) {
+                                                                      return 22.0;
+                                                                    } else {
+                                                                      return 18.0;
+                                                                    }
+                                                                  }(),
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold,
+                                                                ),
+                                                      )),
+                                                    ],
+                                                  ),
+                                                ].divide(
+                                                    const SizedBox(height: 10.0)),
+                                              ),
+                                            ),
                                           ),
                                         ],
                                       ),
@@ -1383,6 +1767,61 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
                                                 ),
                                               ),
                                             ),
+                                            if (responsiveVisibility(
+                                              context: context,
+                                              phone: false,
+                                              desktop: false,
+                                            ))
+                                              Container(
+                                                width: double.infinity,
+                                                height: 130.0,
+                                                decoration: BoxDecoration(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBackground,
+                                                  image: DecorationImage(
+                                                    fit: BoxFit.fill,
+                                                    image: Image.asset(
+                                                      'assets/images/Website_FooterTablet.png',
+                                                    ).image,
+                                                  ),
+                                                ),
+                                                child: wrapWithModel(
+                                                  model:
+                                                      _model.footerTabletModel,
+                                                  updateCallback: () =>
+                                                      setState(() {}),
+                                                  child: const FooterTabletWidget(),
+                                                ),
+                                              ),
+                                            if (responsiveVisibility(
+                                              context: context,
+                                              tablet: false,
+                                              tabletLandscape: false,
+                                              desktop: false,
+                                            ))
+                                              Container(
+                                                width: double.infinity,
+                                                height: 130.0,
+                                                decoration: BoxDecoration(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBackground,
+                                                  image: DecorationImage(
+                                                    fit: BoxFit.fill,
+                                                    image: Image.asset(
+                                                      'assets/images/Website_HomePhone_A.png',
+                                                    ).image,
+                                                  ),
+                                                ),
+                                                child: wrapWithModel(
+                                                  model:
+                                                      _model.footerPhoneModel,
+                                                  updateCallback: () =>
+                                                      setState(() {}),
+                                                  child: const FooterPhoneWidget(),
+                                                ),
+                                              ),
                                           ],
                                         ),
                                       ),
