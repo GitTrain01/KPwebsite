@@ -605,7 +605,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           ),
                           child: Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                100.0, 300.0, 100.0, 300.0),
+                                140.0, 200.0, 140.0, 320.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -637,42 +637,42 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           1280.0) &&
                                                       (MediaQuery.sizeOf(context).width <=
                                                           1439.0)) {
-                                                    return 25.0;
+                                                    return 30.0;
                                                   } else if ((MediaQuery.sizeOf(context).width >=
                                                           1440.0) &&
                                                       (MediaQuery.sizeOf(context).width <=
                                                           1511.0)) {
-                                                    return 28.0;
+                                                    return 35.0;
                                                   } else if ((MediaQuery.sizeOf(context).width >=
                                                           1512.0) &&
                                                       (MediaQuery.sizeOf(context).width <=
                                                           1535.0)) {
-                                                    return 30.0;
+                                                    return 35.0;
                                                   } else if ((MediaQuery.sizeOf(context).width >=
                                                           1536.0) &&
                                                       (MediaQuery.sizeOf(context).width <=
                                                           1727.0)) {
-                                                    return 32.0;
+                                                    return 38.0;
                                                   } else if ((MediaQuery.sizeOf(context).width >=
                                                           1728.0) &&
                                                       (MediaQuery.sizeOf(context).width <=
                                                           1919.0)) {
-                                                    return 37.0;
+                                                    return 40.0;
                                                   } else if ((MediaQuery.sizeOf(context).width >=
                                                           1920.0) &&
                                                       (MediaQuery.sizeOf(context).width <=
                                                           2239.0)) {
-                                                    return 40.0;
+                                                    return 45.0;
                                                   } else if ((MediaQuery.sizeOf(context).width >=
                                                           2240.0) &&
                                                       (MediaQuery.sizeOf(context)
                                                               .width <=
                                                           2559.0)) {
-                                                    return 45.0;
+                                                    return 50.0;
                                                   } else if (MediaQuery.sizeOf(context)
                                                           .width >=
                                                       2560.0) {
-                                                    return 55.0;
+                                                    return 50.0;
                                                   } else {
                                                     return 30.0;
                                                   }
@@ -700,42 +700,42 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           1280.0) &&
                                                       (MediaQuery.sizeOf(context).width <=
                                                           1439.0)) {
-                                                    return 25.0;
+                                                    return 30.0;
                                                   } else if ((MediaQuery.sizeOf(context).width >=
                                                           1440.0) &&
                                                       (MediaQuery.sizeOf(context).width <=
                                                           1511.0)) {
-                                                    return 28.0;
+                                                    return 35.0;
                                                   } else if ((MediaQuery.sizeOf(context).width >=
                                                           1512.0) &&
                                                       (MediaQuery.sizeOf(context).width <=
                                                           1535.0)) {
-                                                    return 30.0;
+                                                    return 35.0;
                                                   } else if ((MediaQuery.sizeOf(context).width >=
                                                           1536.0) &&
                                                       (MediaQuery.sizeOf(context).width <=
                                                           1727.0)) {
-                                                    return 32.0;
+                                                    return 38.0;
                                                   } else if ((MediaQuery.sizeOf(context).width >=
                                                           1728.0) &&
                                                       (MediaQuery.sizeOf(context).width <=
                                                           1919.0)) {
-                                                    return 37.0;
+                                                    return 40.0;
                                                   } else if ((MediaQuery.sizeOf(context).width >=
                                                           1920.0) &&
                                                       (MediaQuery.sizeOf(context).width <=
                                                           2239.0)) {
-                                                    return 40.0;
+                                                    return 45.0;
                                                   } else if ((MediaQuery.sizeOf(context).width >=
                                                           2240.0) &&
                                                       (MediaQuery.sizeOf(context)
                                                               .width <=
                                                           2559.0)) {
-                                                    return 45.0;
+                                                    return 50.0;
                                                   } else if (MediaQuery.sizeOf(context)
                                                           .width >=
                                                       2560.0) {
-                                                    return 55.0;
+                                                    return 50.0;
                                                   } else {
                                                     return 30.0;
                                                   }
@@ -782,17 +782,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                             1536.0) &&
                                                         (MediaQuery.sizeOf(context).width <=
                                                             1727.0)) {
-                                                      return 22.0;
+                                                      return 20.0;
                                                     } else if ((MediaQuery.sizeOf(context).width >=
                                                             1728.0) &&
                                                         (MediaQuery.sizeOf(context).width <=
                                                             1919.0)) {
-                                                      return 27.0;
+                                                      return 23.0;
                                                     } else if ((MediaQuery.sizeOf(context).width >=
                                                             1920.0) &&
                                                         (MediaQuery.sizeOf(context).width <=
                                                             2239.0)) {
-                                                      return 30.0;
+                                                      return 27.0;
                                                     } else if ((MediaQuery.sizeOf(context).width >=
                                                             2240.0) &&
                                                         (MediaQuery.sizeOf(context)
@@ -802,9 +802,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                     } else if (MediaQuery.sizeOf(context)
                                                             .width >=
                                                         2560.0) {
-                                                      return 45.0;
+                                                      return 40.0;
                                                     } else {
-                                                      return 20.0;
+                                                      return 16.0;
                                                     }
                                                   }(),
                                                   fontWeight: FontWeight.normal,
@@ -843,42 +843,42 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                             1280.0) &&
                                                         (MediaQuery.sizeOf(context).width <=
                                                             1439.0)) {
-                                                      return 25.0;
+                                                      return 30.0;
                                                     } else if ((MediaQuery.sizeOf(context).width >=
                                                             1440.0) &&
                                                         (MediaQuery.sizeOf(context).width <=
                                                             1511.0)) {
-                                                      return 28.0;
+                                                      return 35.0;
                                                     } else if ((MediaQuery.sizeOf(context).width >=
                                                             1512.0) &&
                                                         (MediaQuery.sizeOf(context).width <=
                                                             1535.0)) {
-                                                      return 30.0;
+                                                      return 35.0;
                                                     } else if ((MediaQuery.sizeOf(context).width >=
                                                             1536.0) &&
                                                         (MediaQuery.sizeOf(context).width <=
                                                             1727.0)) {
-                                                      return 32.0;
+                                                      return 38.0;
                                                     } else if ((MediaQuery.sizeOf(context).width >=
                                                             1728.0) &&
                                                         (MediaQuery.sizeOf(context).width <=
                                                             1919.0)) {
-                                                      return 37.0;
+                                                      return 40.0;
                                                     } else if ((MediaQuery.sizeOf(context).width >=
                                                             1920.0) &&
                                                         (MediaQuery.sizeOf(context).width <=
                                                             2239.0)) {
-                                                      return 40.0;
+                                                      return 45.0;
                                                     } else if ((MediaQuery.sizeOf(context).width >=
                                                             2240.0) &&
                                                         (MediaQuery.sizeOf(context)
                                                                 .width <=
                                                             2559.0)) {
-                                                      return 45.0;
+                                                      return 50.0;
                                                     } else if (MediaQuery.sizeOf(context)
                                                             .width >=
                                                         2560.0) {
-                                                      return 55.0;
+                                                      return 50.0;
                                                     } else {
                                                       return 30.0;
                                                     }
@@ -926,17 +926,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               1536.0) &&
                                                           (MediaQuery.sizeOf(context).width <=
                                                               1727.0)) {
-                                                        return 22.0;
+                                                        return 20.0;
                                                       } else if ((MediaQuery.sizeOf(context).width >=
                                                               1728.0) &&
                                                           (MediaQuery.sizeOf(context).width <=
                                                               1919.0)) {
-                                                        return 27.0;
+                                                        return 23.0;
                                                       } else if ((MediaQuery.sizeOf(context).width >=
                                                               1920.0) &&
                                                           (MediaQuery.sizeOf(context).width <=
                                                               2239.0)) {
-                                                        return 30.0;
+                                                        return 27.0;
                                                       } else if ((MediaQuery.sizeOf(context).width >=
                                                               2240.0) &&
                                                           (MediaQuery.sizeOf(context)
@@ -946,9 +946,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       } else if (MediaQuery.sizeOf(context)
                                                               .width >=
                                                           2560.0) {
-                                                        return 45.0;
+                                                        return 40.0;
                                                       } else {
-                                                        return 20.0;
+                                                        return 16.0;
                                                       }
                                                     }(),
                                                     fontWeight:
@@ -965,7 +965,49 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ),
                                   ),
                                 ),
-                              ].divide(const SizedBox(height: 400.0)),
+                              ].divide(SizedBox(height: () {
+                                if ((MediaQuery.sizeOf(context).width >=
+                                        1280.0) &&
+                                    (MediaQuery.sizeOf(context).width <=
+                                        1439.0)) {
+                                  return 200.0;
+                                } else if ((MediaQuery.sizeOf(context).width >=
+                                        1440.0) &&
+                                    (MediaQuery.sizeOf(context).width <=
+                                        1511.0)) {
+                                  return 250.0;
+                                } else if ((MediaQuery.sizeOf(context).width >=
+                                        1512.0) &&
+                                    (MediaQuery.sizeOf(context).width <=
+                                        1535.0)) {
+                                  return 300.0;
+                                } else if ((MediaQuery.sizeOf(context).width >=
+                                        1536.0) &&
+                                    (MediaQuery.sizeOf(context).width <=
+                                        1727.0)) {
+                                  return 300.0;
+                                } else if ((MediaQuery.sizeOf(context).width >=
+                                        1728.0) &&
+                                    (MediaQuery.sizeOf(context).width <=
+                                        1919.0)) {
+                                  return 330.0;
+                                } else if ((MediaQuery.sizeOf(context).width >=
+                                        1920.0) &&
+                                    (MediaQuery.sizeOf(context).width <=
+                                        2239.0)) {
+                                  return 425.0;
+                                } else if ((MediaQuery.sizeOf(context).width >=
+                                        2240.0) &&
+                                    (MediaQuery.sizeOf(context).width <=
+                                        2559.0)) {
+                                  return 470.0;
+                                } else if (MediaQuery.sizeOf(context).width >=
+                                    2560.0) {
+                                  return 500.0;
+                                } else {
+                                  return 300.0;
+                                }
+                              }())),
                             ),
                           ),
                         ),
@@ -1769,7 +1811,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             ),
                             child: Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
-                                  60.0, 350.0, 60.0, 120.0),
+                                  60.0, 320.0, 60.0, 160.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -2345,8 +2387,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       context)
                                                                   .width <=
                                                               1023.0)
-                                                      ? 20.0
-                                                      : 25.0,
+                                                      ? 18.0
+                                                      : 23.0,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                           )).animateOnActionTrigger(
@@ -2377,8 +2419,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       context)
                                                                   .width <=
                                                               1023.0)
-                                                      ? 20.0
-                                                      : 25.0,
+                                                      ? 18.0
+                                                      : 23.0,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                           )).animateOnActionTrigger(
@@ -2415,7 +2457,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         .width <=
                                                                     1023.0)
                                                             ? 14.0
-                                                            : 18.0,
+                                                            : 16.0,
                                                         fontWeight:
                                                             FontWeight.normal,
                                                       ),
@@ -2461,8 +2503,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         context)
                                                                     .width <=
                                                                 1023.0)
-                                                        ? 20.0
-                                                        : 25.0,
+                                                        ? 18.0
+                                                        : 23.0,
                                                     fontWeight: FontWeight.bold,
                                                   ),
                                             )),
@@ -2495,7 +2537,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           .width <=
                                                                       1023.0)
                                                               ? 14.0
-                                                              : 18.0,
+                                                              : 16.0,
                                                           fontWeight:
                                                               FontWeight.normal,
                                                         ),
