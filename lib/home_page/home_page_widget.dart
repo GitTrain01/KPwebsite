@@ -990,7 +990,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         1728.0) &&
                                     (MediaQuery.sizeOf(context).width <=
                                         1919.0)) {
-                                  return 330.0;
+                                  return 310.0;
                                 } else if ((MediaQuery.sizeOf(context).width >=
                                         1920.0) &&
                                     (MediaQuery.sizeOf(context).width <=
