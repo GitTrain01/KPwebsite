@@ -206,7 +206,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
     context.watch<FFAppState>();
 
     return Title(
-        title: 'HomePage',
+        title: 'Home',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
         child: GestureDetector(
           onTap: () => _model.unfocusNode.canRequestFocus
