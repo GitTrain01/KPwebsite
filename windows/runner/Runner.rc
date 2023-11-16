@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "KP-Website" "\0"
+            VALUE "CompanyName", "Kapampamangan" "\0"
             VALUE "FileDescription", "A new Flutter project." "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "KP-Website" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2022 KP-Website. All rights reserved." "\0"
-            VALUE "OriginalFilename", "k_p_website.exe" "\0"
-            VALUE "ProductName", "KP-Website" "\0"
+            VALUE "InternalName", "Kapampamangan" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2022 Kapampamangan. All rights reserved." "\0"
+            VALUE "OriginalFilename", "kapampamangan.exe" "\0"
+            VALUE "ProductName", "Kapampamangan" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -29,51 +29,31 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => appStateNotifier.showSplashImage
-          ? Builder(
-              builder: (context) => Container(
-                color: Colors.transparent,
-                child: Image.asset(
-                  'assets/images/Logo2_Color.png',
-                  fit: BoxFit.contain,
-                ),
-              ),
-            )
-          : const HomePageWidget(),
+      errorBuilder: (context, state) => const HomePageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => appStateNotifier.showSplashImage
-              ? Builder(
-                  builder: (context) => Container(
-                    color: Colors.transparent,
-                    child: Image.asset(
-                      'assets/images/Logo2_Color.png',
-                      fit: BoxFit.contain,
-                    ),
-                  ),
-                )
-              : const HomePageWidget(),
+          builder: (context, _) => const HomePageWidget(),
         ),
         FFRoute(
           name: 'HomePage',
-          path: '/homePage',
+          path: '/home',
           builder: (context, params) => const HomePageWidget(),
         ),
         FFRoute(
           name: 'AboutPage',
-          path: '/aboutPage',
+          path: '/about',
           builder: (context, params) => const AboutPageWidget(),
         ),
         FFRoute(
           name: 'PrivacyPolicy',
-          path: '/privacyPolicy',
+          path: '/privacy-policy',
           builder: (context, params) => const PrivacyPolicyWidget(),
         ),
         FFRoute(
           name: 'TermsOfUse',
-          path: '/termsOfUse',
+          path: '/terms-of-use',
           builder: (context, params) => const TermsOfUseWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),

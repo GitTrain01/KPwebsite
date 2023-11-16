@@ -106,7 +106,7 @@ class _AboutPageWidgetState extends State<AboutPageWidget>
     context.watch<FFAppState>();
 
     return Title(
-        title: 'About',
+        title: 'Kapam-Pamangan: About',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
         child: GestureDetector(
           onTap: () => _model.unfocusNode.canRequestFocus

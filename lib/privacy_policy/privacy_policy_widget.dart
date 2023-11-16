@@ -107,7 +107,7 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget>
     context.watch<FFAppState>();
 
     return Title(
-        title: 'PrivacyPolicy',
+        title: 'Kapam-Pamangan: Privacy Policy',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
         child: GestureDetector(
           onTap: () => _model.unfocusNode.canRequestFocus

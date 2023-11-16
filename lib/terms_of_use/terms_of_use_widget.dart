@@ -107,7 +107,7 @@ class _TermsOfUseWidgetState extends State<TermsOfUseWidget>
     context.watch<FFAppState>();
 
     return Title(
-        title: 'TermsOfUse',
+        title: 'Kapam-Pamangan: Terms of Use',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
         child: GestureDetector(
           onTap: () => _model.unfocusNode.canRequestFocus

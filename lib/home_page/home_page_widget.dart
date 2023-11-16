@@ -206,7 +206,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
     context.watch<FFAppState>();
 
     return Title(
-        title: 'Home',
+        title: 'Kapam-Pamangan: Home',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
         child: GestureDetector(
           onTap: () => _model.unfocusNode.canRequestFocus
@@ -230,7 +230,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       width: MediaQuery.sizeOf(context).width * 1.0,
                       height: MediaQuery.sizeOf(context).height * 1.6,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).primary,
+                        color: FlutterFlowTheme.of(context).primaryBackground,
                         image: DecorationImage(
                           fit: BoxFit.fill,
                           image: Image.asset(
@@ -254,7 +254,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       MediaQuery.sizeOf(context).height * 0.07,
                                   decoration: BoxDecoration(
                                     color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
+                                        .primaryBackground,
                                   ),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(8.0),
