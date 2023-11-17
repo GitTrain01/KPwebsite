@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
-project(kapampamangan LANGUAGES CXX)
+project(kapampamangan_website LANGUAGES CXX)
 
-set(BINARY_NAME "kapampamangan")
+set(BINARY_NAME "kapampamangan_website")
 
 cmake_policy(SET CMP0063 NEW)
 

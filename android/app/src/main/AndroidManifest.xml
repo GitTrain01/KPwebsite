@@ -1,11 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mycompany.kapampamangan"
+    package="com.mycompany.kapampamanganwebsite"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET"/>
 
 
     <application
-        android:label="Kapampamangan"
+        android:label="Kapam-Pamangan Website"
         tools:replace="android:label"
         android:icon="@mipmap/ic_launcher"
         android:requestLegacyExternalStorage="true">
@@ -45,7 +45,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="kapampamangan" android:host="kapampamangan.com" />
+                <data android:scheme="kapampamanganwebsite" android:host="kapampamanganwebsite.com" />
             </intent-filter>
 
         </activity>
