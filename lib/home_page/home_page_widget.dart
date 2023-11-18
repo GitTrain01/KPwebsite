@@ -1796,14 +1796,16 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           ),
                         if (responsiveVisibility(
                           context: context,
+                          tablet: false,
+                          tabletLandscape: false,
                           desktop: false,
                         ))
                           Container(
                             width: double.infinity,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context).secondaryText,
+                              color: FlutterFlowTheme.of(context).primary,
                               image: DecorationImage(
-                                fit: BoxFit.cover,
+                                fit: BoxFit.fitHeight,
                                 image: Image.asset(
                                   'assets/images/Website_HomePhone_A.png',
                                 ).image,
@@ -1820,7 +1822,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     decoration: const BoxDecoration(),
                                     child: Padding(
                                       padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 20.0, 0.0, 0.0),
+                                          0.0, 40.0, 0.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -1866,17 +1868,37 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   Container(
                                     width: double.infinity,
                                     decoration: const BoxDecoration(),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 20.0),
-                                          child: SelectionArea(
-                                              child: AutoSizeText(
-                                            'App Features',
-                                            textAlign: TextAlign.center,
+                                    child: Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 50.0, 0.0, 0.0),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Padding(
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 0.0, 20.0),
+                                            child: SelectionArea(
+                                                child: AutoSizeText(
+                                              'App Features',
+                                              textAlign: TextAlign.center,
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Poppins',
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primaryBackground,
+                                                    fontSize: 20.0,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                            )),
+                                          ),
+                                          SelectionArea(
+                                              child: Text(
+                                            'Explore Kapampangan cuisine like never before with the Kapam-Pamangan app, packed with a diverse range of features to enhance your culinary experience. From searching for numerous Kapampangan recipes to generating recommended dishes based on available ingredients, our app is your indispensable kitchen companion. Dive into the world of Kapampangan cooking with step-by-step cooking instructions, meal planning tools, and more!',
+                                            textAlign: TextAlign.justify,
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
@@ -1884,26 +1906,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primaryBackground,
-                                                  fontSize: 20.0,
-                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 13.0,
                                                 ),
                                           )),
-                                        ),
-                                        SelectionArea(
-                                            child: Text(
-                                          'Explore Kapampangan cuisine like never before with the Kapam-Pamangan app, packed with a diverse range of features to enhance your culinary experience. From searching for numerous Kapampangan recipes to generating recommended dishes based on available ingredients, our app is your indispensable kitchen companion. Dive into the world of Kapampangan cooking with step-by-step cooking instructions, meal planning tools, and more!',
-                                          textAlign: TextAlign.justify,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Poppins',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryBackground,
-                                                fontSize: 13.0,
-                                              ),
-                                        )),
-                                      ],
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ].divide(const SizedBox(height: 390.0)),
@@ -1912,12 +1919,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           ),
                         if (responsiveVisibility(
                           context: context,
+                          tablet: false,
+                          tabletLandscape: false,
                           desktop: false,
                         ))
                           Container(
                             width: double.infinity,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context).warning,
+                              color: FlutterFlowTheme.of(context).primary,
                               image: DecorationImage(
                                 fit: BoxFit.fill,
                                 image: Image.asset(
@@ -2341,7 +2350,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           Container(
                             width: double.infinity,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context).secondaryText,
+                              color: FlutterFlowTheme.of(context).primary,
                               image: DecorationImage(
                                 fit: BoxFit.fill,
                                 image: Image.asset(
@@ -2560,7 +2569,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           Container(
                             width: double.infinity,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context).warning,
+                              color: FlutterFlowTheme.of(context).primary,
                               image: DecorationImage(
                                 fit: BoxFit.fill,
                                 image: Image.asset(
