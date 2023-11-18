@@ -1805,7 +1805,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context).primary,
                               image: DecorationImage(
-                                fit: BoxFit.fitHeight,
+                                fit: BoxFit.fill,
                                 image: Image.asset(
                                   'assets/images/Website_HomePhone_A.png',
                                 ).image,
@@ -1813,7 +1813,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             ),
                             child: Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
-                                  60.0, 320.0, 60.0, 160.0),
+                                  60.0, 200.0, 60.0, 160.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -1822,7 +1822,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     decoration: const BoxDecoration(),
                                     child: Padding(
                                       padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 40.0, 0.0, 0.0),
+                                          0.0, 150.0, 0.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
